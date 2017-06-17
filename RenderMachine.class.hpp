@@ -14,6 +14,8 @@ public:
 	RenderMachine & operator=(RenderMachine const & rhs);
 
 	void	renderAll(void);
+	void	addPrintable(unsigned int id);
+	void	removePrintable(unsigned int id);
 
 private:
 	IPrintable		**_tab;
