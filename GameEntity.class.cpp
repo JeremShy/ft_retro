@@ -87,5 +87,6 @@ void				GameEntity::setDamage(unsigned int damage){
 }
 
 void				GameEntity::display(void) {
-	print_ge(this);
+	// print_ge(this);
+	std::cout << "Displaying with values : " << this->_x << " - " << this->_y << std::endl;
 }

@@ -31,7 +31,8 @@ RenderMachine & RenderMachine::operator=(RenderMachine const & rhs) {
 
 void	RenderMachine::renderAll(void) {
 	for (unsigned int i = 0; i < this->_amount; i++) {
-		this->_tab[i]->display();
+		std::cout << "i : " << i << std::endl;
+		(this->_tab[i])->display();
 	}
 }
 
@@ -40,6 +41,7 @@ void	RenderMachine::addPrintable(unsigned int idx, IPrintable *obj) { // TO DO :
 		std::cout << "There was an error while trying to ADD a printable on the RenderMachine at position " << idx << ". There is only " << this->_amount << " printables in the table." << std::endl;
 		return ;
 	}
+	std::cout << "id : " << idx << std::endl;
 	if (this->_amount == 0) {
 		if (this->_tab != NULL) { //_tab is supposed to be null if _amount == 0, but still..
 			delete [] this->_tab;
@@ -62,10 +64,11 @@ void	RenderMachine::addPrintable(unsigned int idx, IPrintable *obj) { // TO DO :
 	}
 	delete [] this->_tab;
 	this->_tab = new_tab;
+	this->_amount++;
 }
 
 void	RenderMachine::addPrintable(IPrintable *obj) {
-	this->addPrintable(this->_amount + 1, obj);
+	this->addPrintable(this->_amount, obj);
 }
 
 void	RenderMachine::removePrintable(unsigned int idx) {

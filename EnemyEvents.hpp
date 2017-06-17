@@ -5,4 +5,7 @@
 #include "EnemyA.class.hpp"
 #include "EnemyB.class.hpp"
 
+Enemy*			spawnRand(void);
+Enemy**			spawnHorde(int level);
+
 #endif
