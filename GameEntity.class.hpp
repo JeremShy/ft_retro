@@ -3,6 +3,11 @@
 
 # include "IPrintable.class.hpp"
 
+# define UP_ARROW 1
+# define DOWN_ARROW 2
+# define LEFT_ARROW 3
+# define RIGHT_ARROW 4
+
 class GameEntity : public IPrintable
 {
 public:
