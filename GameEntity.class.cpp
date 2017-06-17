@@ -1,11 +1,11 @@
 #include "GameEntity.class.hpp"
 #include "display.hpp"
 
-GameEntity::GameEntity(char model, unsigned int x = 0, unsigned int y = 0, unsigned int health = 0, unsigned int damage = 0) : _model(model), _x(x), _y(y), _health(health), _damage(damage){
+GameEntity::GameEntity(char model, unsigned int x = 0, unsigned int y = 0, unsigned int health = 0, unsigned int damage = 0) : Movable(x, y), _model(model), _health(health), _damage(damage){
 	return;
 }
 
-GameEntity::GameEntity(GameEntity const & cpy) : _model(cpy.getModel()), _x(cpy.getPositionX()), _y(cpy.getPositionY()), _health(cpy.getHealth()), _damage(cpy.getDamage()){
+GameEntity::GameEntity(GameEntity const & cpy) : Movable(cpy._x, cpy._y), _model(cpy.getModel()), _health(cpy.getHealth()), _damage(cpy.getDamage()){
 	return;
 }
 
@@ -43,14 +43,6 @@ char				GameEntity::getModel(void) const{
 	return this->_model;
 }
 
-unsigned int		GameEntity::getPositionX(void) const{
-	return this->_x;
-}
-
-unsigned int		GameEntity::getPositionY(void) const{
-	return this->_y;
-}
-
 unsigned int 		GameEntity::getHealth(void) const{
 	return this->_health;
 }
@@ -63,16 +55,6 @@ unsigned int 		GameEntity::getDamage(void) const{
 
 void				GameEntity::setModel(char model){
 	this->_model = model;
-	return;
-}
-
-void				GameEntity::setPositionX(unsigned int x){
-	this->_x = x;
-	return;
-}
-
-void				GameEntity::setPositionY(unsigned int y){
-	this->_y = y;
 	return;
 }
 

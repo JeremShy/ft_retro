@@ -40,19 +40,19 @@ void			Hero::takeDamage(unsigned int damage){
 	return;
 }
 
-void			Hero::move(int input){
-	switch (input){
-		case UP_ARROW :
-			this->setPositionY(this->getPositionY() + 1);
-			break;
-		case DOWN_ARROW :
-			this->setPositionY(this->getPositionY() - 1);
-			break;
-		case RIGHT_ARROW :
-			this->setPositionX(this->getPositionX() + 1);
-			break;
-		case LEFT_ARROW :
-			this->setPositionX(this->getPositionX() - 1);
-			break;
-	}
-}
+// void			Hero::move(int input){
+// 	switch (input){
+// 		case UP_ARROW :
+// 			this->setPositionY(this->getPositionY() + 1);
+// 			break;
+// 		case DOWN_ARROW :
+// 			this->setPositionY(this->getPositionY() - 1);
+// 			break;
+// 		case RIGHT_ARROW :
+// 			this->setPositionX(this->getPositionX() + 1);
+// 			break;
+// 		case LEFT_ARROW :
+// 			this->setPositionX(this->getPositionX() - 1);
+// 			break;
+// 	}
+// }

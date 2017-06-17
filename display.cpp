@@ -1,7 +1,7 @@
 #include "display.hpp"
 
 void	print_ge(GameEntity *target) {
-	mvaddch(target->getPositionX(), target->getPositionY(), target->getModel());
+	mvaddch(target->getPositionY(), target->getPositionX(), target->getModel());
 }
 
 void	init_ncurse(void) {

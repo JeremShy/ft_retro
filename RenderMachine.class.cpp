@@ -31,7 +31,7 @@ RenderMachine & RenderMachine::operator=(RenderMachine const & rhs) {
 
 void	RenderMachine::renderAll(void) {
 	for (unsigned int i = 0; i < this->_amount; i++) {
-		std::cout << "i : " << i << std::endl;
+		// std::cout << "i : " << i << std::endl;
 		(this->_tab[i])->display();
 	}
 }

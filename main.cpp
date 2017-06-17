@@ -21,8 +21,10 @@ int main() {
 	machine.describe();
 
 	init_ncurse();
-	machine.renderAll();
+	timeout(20);
 	while (1) {
+		hero.move();
+		machine.renderAll();
 		refresh();
 		ch = getch();
 		switch (ch){
@@ -30,8 +32,11 @@ int main() {
 				close_ncurse();
 				return 0;
 				break;
+			case KEY_DOWN:
+				hero.setDirectionY(1);
+				break;
 			default:
-			break;
+				break;
 		}
 	}
 

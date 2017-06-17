@@ -8,7 +8,8 @@ SRC_NAME =	Enemy.class.cpp \
 						IPrintable.class.cpp \
 						RenderMachine.class.cpp \
 						display.cpp \
-						main.cpp
+						main.cpp \
+						Movable.class.cpp
 
 INC_PATH = ./
 OBJ_PATH = ./obj/
