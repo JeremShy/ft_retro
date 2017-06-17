@@ -13,8 +13,9 @@ public:
 
 	GameEntity *	clone();
 
-	void			takeDamage(unsigned int);
-	void			display(void);
+	void					display(void);
+	virtual void			attack(void);
+	virtual void			takeDamage(unsigned int);
 
 	char			getModel(void) const;
 	unsigned int 	getHealth(void) const;
