@@ -15,13 +15,9 @@ public:
 
 	virtual void	attack(void);
 	virtual void	takeDamage(unsigned int damage);
+	virtual void	move(int input);
 
 	~Hero();
-
-private:
-	static const int			c_model = 'H'; //You might change that but anyway
-	static const unsigned int	c_health = 100;
-	static const unsigned int	c_damage = 20;
 	
 };
 
