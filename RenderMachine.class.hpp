@@ -20,6 +20,9 @@ public:
 	IPrintable	*getPrintable(unsigned int _id);
 
 	unsigned int	getAmount(void) const;
+
+	void	describe(void);
+
 private:
 	IPrintable		**_tab;
 	unsigned int	_amount;
