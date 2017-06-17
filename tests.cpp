@@ -11,5 +11,8 @@
 
 
 int main() {
-	RenderMachine = new RenderMachine();
+	RenderMachine render;
+
+	EnemyA a;
+	EnemyB b;
 }
