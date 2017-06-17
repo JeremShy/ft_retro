@@ -1,7 +1,8 @@
 SRC_NAME =	display.cpp \
 						main.cpp \
 						GameEntity.class.cpp \
-						IPrintable.class.cpp
+						IPrintable.class.cpp \
+						RenderMachine.class.cpp
 
 INC_PATH = ./
 OBJ_PATH = ./obj/

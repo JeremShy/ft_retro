@@ -6,8 +6,9 @@
 
 class IPrintable {
 public:
-	virtual ~IPrintable(void);
-	virtual void	display() = 0;
+	virtual							~IPrintable(void);
+	virtual void				display() = 0;
+	virtual IPrintable	*clone();
 };
 
 #endif
