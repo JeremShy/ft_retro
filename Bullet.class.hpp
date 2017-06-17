@@ -26,6 +26,7 @@ public:
 
 	virtual Bullet *clone(void);
 	virtual void	display(void);
+	virtual void	erase(void);
 
 	~Bullet();
 
@@ -34,7 +35,7 @@ private:
 	int 			_y;
 	int 			_damage;
 	GameEntity *	_shooter;
-	
+
 };
 
 #endif

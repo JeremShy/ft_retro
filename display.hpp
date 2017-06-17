@@ -2,10 +2,11 @@
 #define DISPLAY_H
 
 #include <ncurses.h>
-#include "GameEntity.class.hpp"
+#include "IPrintable.class.hpp"
 
-void	print_ge(GameEntity *target);
+void	print_ip(IPrintable *target);
+void	erase_ip(IPrintable *target);
 void	init_ncurse(void);
-void	close_ncurse(void);	
+void	close_ncurse(void);
 
 #endif

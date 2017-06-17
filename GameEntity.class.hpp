@@ -21,6 +21,7 @@ public:
 	virtual GameEntity *	clone();
 
 	void							display(void);
+	void							erase(void);
 	virtual void			attack(void);
 	virtual void			takeDamage(unsigned int);
 	// virtual void			move(int input);

@@ -36,6 +36,13 @@ void	RenderMachine::renderAll(void) {
 	}
 }
 
+void	RenderMachine::eraseAll(void) {
+	for (unsigned int i = 0; i < this->_amount; i++) {
+		// std::cout << "i : " << i << std::endl;
+		(this->_tab[i])->erase();
+	}
+}
+
 void	RenderMachine::addPrintable(unsigned int idx, IPrintable *obj) { // TO DO : Tester quand les iprintable seront fonctionels.
 	if (idx > this->_amount + 1) {
 		std::cout << "There was an error while trying to ADD a printable on the RenderMachine at position " << idx << ". There is only " << this->_amount << " printables in the table." << std::endl;

@@ -23,6 +23,7 @@ int main() {
 	init_ncurse();
 	timeout(20);
 	while (1) {
+		machine.eraseAll();
 		hero.move();
 		machine.renderAll();
 		refresh();

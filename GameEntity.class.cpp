@@ -69,6 +69,10 @@ void				GameEntity::setDamage(unsigned int damage){
 }
 
 void				GameEntity::display(void) {
-	print_ge(this);
+	mvaddch(this->getPositionY(), this->getPositionX(), this->getModel());
 	// std::cout << "Displaying with values : " << this->_x << " - " << this->_y << std::endl;
+}
+
+void				GameEntity::erase(void) {
+	mvdelch(this->getPositionY(), this->getPositionX());
 }

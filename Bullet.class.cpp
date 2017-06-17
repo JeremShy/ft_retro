@@ -30,6 +30,11 @@ void				Bullet::display(void){
 	/* do something */
 }
 
+void				Bullet::erase(void){
+	/* do something */
+}
+
+
 void				Bullet::move(void){
 	this->setPositionX(this->getPositionX() + 1);
 	return;

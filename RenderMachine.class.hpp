@@ -14,6 +14,7 @@ public:
 	RenderMachine & operator=(RenderMachine const & rhs);
 
 	void	renderAll(void);
+	void	eraseAll(void);
 	void	addPrintable(unsigned int id, IPrintable *obj);
 	void	addPrintable(IPrintable *obj);
 	void	removePrintable(unsigned int id);

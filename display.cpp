@@ -1,7 +1,11 @@
 #include "display.hpp"
 
-void	print_ge(GameEntity *target) {
-	mvaddch(target->getPositionY(), target->getPositionX(), target->getModel());
+void	print_ip(IPrintable *target) {
+	target->display();
+}
+
+void	erase_ip(IPrintable *target) {
+	target->erase();
 }
 
 void	init_ncurse(void) {
