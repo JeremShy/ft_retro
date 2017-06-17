@@ -25,7 +25,7 @@ public:
 	virtual ~GameEntity();
 
 private:
-	char const		_model;
+	char 					_model;
 	unsigned int 	_x;
 	unsigned int 	_y;
 	unsigned int 	_health;
