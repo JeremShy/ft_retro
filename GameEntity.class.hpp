@@ -9,6 +9,8 @@ public:
 
 	GameEntity & 	operator=(GameEntity const &);
 
+	GameEntity *	clone();
+
 	void			takeDamage(unsigned int);
 
 	char			getModel(void) const;
