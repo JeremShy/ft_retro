@@ -1,8 +1,8 @@
 #include "Hero.class.hpp"
 
-Hero::Hero(void) : GameEntity((char)this->c_model){
-	this->setHealth(this->c_health);
-	this->setDamage(this->c_damage);
+Hero::Hero(void) : GameEntity('H'){
+	this->setHealth(100);
+	this->setDamage(20);
 	return;
 }
 
@@ -40,4 +40,21 @@ void			Hero::takeDamage(unsigned int damage){
 		//die + end of game
 	}
 	return;
+}
+
+void			Hero::move(int input){
+	switch (input){
+		case UP_ARROW :
+			this->setPositionY(this->getPositionY() + 1);
+			break;
+		case DOWN_ARROW :
+			this->setPositionY(this->getPositionY() - 1);
+			break;
+		case RIGHT_ARROW :
+			this->setPositionX(this->getPositionX() + 1);
+			break;
+		case LEFT_ARROW :
+			this->setPositionX(this->getPositionX() - 1);
+			break;
+	}
 }

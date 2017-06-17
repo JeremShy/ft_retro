@@ -42,6 +42,12 @@ void			Enemy::takeDamage(unsigned int damage){
 	return;
 }
 
+void			Enemy::move(int input=-1){
+	if (input == -1)
+		this->setPositionX(this->getPositionX() - 1);
+	return;
+}
+
 std::ostream& operator<< (std::ostream& stream, const Enemy & enemy) {
 	stream << enemy.getModel() << ": has " << enemy.getHealth() << "hp and deals " << enemy.getDamage() << " damage." << std::endl;
 	return (stream);

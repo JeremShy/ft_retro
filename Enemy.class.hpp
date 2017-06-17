@@ -16,6 +16,7 @@ public:
 
 	virtual void	attack(void);
 	virtual void	takeDamage(unsigned int damage);
+	virtual void	move(int input);
 
 	~Enemy();
 
