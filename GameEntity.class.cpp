@@ -32,13 +32,9 @@ void						GameEntity::attack(void) {
 	// Is this method really useful ?
 }
 
-void						GameEntity::attack(GameEntity *target) {
-	//Maybe decrement the ammo count.
-	target->takeDamage(this->_damage);
-}
-
 void					GameEntity::takeDamage(unsigned int amount) {
 	//Maybe decrement with the armor of the GE.
+	this->_health -= amount;
 }
 
 /*-----------------------------------------------------------getter*/

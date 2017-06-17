@@ -20,9 +20,8 @@ public:
 
 	void							display(void);
 	virtual void			attack(void);
-	virtual void			attack(GameEntity *target);
 	virtual void			takeDamage(unsigned int);
-	virtual void			move(int input);
+	// virtual void			move(int input);
 
 	char			getModel(void) const;
 	unsigned int 	getHealth(void) const;

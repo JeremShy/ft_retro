@@ -1,12 +1,13 @@
-SRC_NAME =	display.cpp \
-						main.cpp \
-						GameEntity.class.cpp \
-						IPrintable.class.cpp \
-						RenderMachine.class.cpp \
-						Enemy.class.cpp \
+SRC_NAME =	Enemy.class.cpp \
 						EnemyA.class.cpp \
 						EnemyB.class.cpp \
-						Hero.class.cpp
+						EnemyEvents.cpp \
+						GameEntity.class.cpp \
+						Hero.class.cpp \
+						IPrintable.class.cpp \
+						RenderMachine.class.cpp \
+						display.cpp \
+						main.cpp
 
 INC_PATH = ./
 OBJ_PATH = ./obj/
