@@ -1,13 +1,13 @@
 #include "Enemy.class.hpp"
 
-Enemy::Enemy(char model, unsigned int health, unsigned int damage) : GameEntity(model){
+Enemy::Enemy(char model, unsigned int health, unsigned int damage) : GameEntity(model, 0, 0, health, damage) { // TODO : Default value for x and y or require x and y as parameter
 	this->setHealth(health);
 	this->setDamage(damage);
 	return;
 }
 
-Enemy::Enemy(Enemy const & cpy) : GameEntity(cpy.getModel()){
-	*this = cpy;
+Enemy::Enemy(Enemy const & cpy) : GameEntity(cpy.getModel(), cpy.getPositionX(), cpy.getPositionY(), cpy.getHealth(), cpy.getDamage()){
+	// *this = cpy;
 	return;
 }
 
@@ -30,7 +30,7 @@ Enemy *			Enemy::clone(void){
 	return new Enemy(*this);
 }
 
-void			Enemy::attack(void) const{
+void			Enemy::attack(void){
 	// Do enemies attack ?
 }
 
@@ -38,7 +38,11 @@ void			Enemy::takeDamage(unsigned int damage){
 	this->setHealth(this->getDamage() - damage);
 	if (this->getHealth() == 0){
 		delete this;
-		this = NULL;
 	}
 	return;
+}
+
+std::ostream& operator<< (std::ostream& stream, const Enemy & enemy) {
+	stream << enemy.getModel() << ": has " << enemy.getHealth() << "hp and deals " << enemy.getDamage() << " damage." << std::endl;
+	return (stream);
 }

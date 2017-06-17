@@ -6,7 +6,7 @@
 class GameEntity : public IPrintable
 {
 public:
-	GameEntity(char const model, unsigned int x, unsigned int y, unsigned int health, unsigned int damage);
+	GameEntity(char const model, unsigned int x = 0, unsigned int y = 0, unsigned int health = 0, unsigned int damage = 0);
 	GameEntity(GameEntity const & cpy);
 
 	GameEntity & 	operator=(GameEntity const &);
@@ -32,6 +32,7 @@ public:
 	virtual ~GameEntity();
 
 private:
+	GameEntity();
 	char 			_model;
 	unsigned int 	_x;
 	unsigned int 	_y;

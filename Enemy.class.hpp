@@ -2,6 +2,7 @@
 # define ENEMY_CLASS_HPP
 
 #include "GameEntity.class.hpp"
+#include <iostream>
 
 class Enemy : public GameEntity
 {
@@ -17,7 +18,9 @@ public:
 	virtual void	takeDamage(unsigned int damage);
 
 	~Enemy();
-	
+
 };
+
+std::ostream& operator<< (std::ostream& stream, const Enemy & enemy);
 
 #endif

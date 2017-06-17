@@ -4,7 +4,7 @@ EnemyA::EnemyA(void) : Enemy('A', 10, 0){
 	return;
 }
 
-EnemyA::EnemyA(EnemyA const & cpy) : Enemy(cpy.getModel(), cpy.getHealth(), cpy.getDamage()){
+EnemyA::EnemyA(EnemyA const & cpy) : Enemy(cpy){
 	return;
 }
 

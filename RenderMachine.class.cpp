@@ -57,7 +57,7 @@ void	RenderMachine::addPrintable(unsigned int idx, IPrintable *obj) { // TO DO :
 	}
 	new_tab[i] = obj;
 	i++;
-	for (i = i; i < this->_amount; i++) {
+	for (; i < this->_amount; i++) {
 		new_tab[i] =this->_tab[i - 1];
 	}
 	delete [] this->_tab;
@@ -77,11 +77,11 @@ void	RenderMachine::removePrintable(unsigned int idx) {
 	IPrintable		**new_tab = new IPrintable*[this->_amount - 1];
 	unsigned int	i;
 
-	for (int i = 0; i < idx; i ++) {
+	for (i = 0; i < idx; i ++) {
 		new_tab[i] =this->_tab[i - 1];
 	}
 	i++;
-	for (i = i; i < this->_amount; i++) {
+	for (; i < this->_amount; i++) {
 		new_tab[i - 1] = this->_tab[i];
 	}
 	if (this->_tab)
