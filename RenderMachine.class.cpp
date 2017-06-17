@@ -31,7 +31,6 @@ RenderMachine & RenderMachine::operator=(RenderMachine const & rhs) {
 
 void	RenderMachine::renderAll(void) {
 	for (unsigned int i = 0; i < this->_amount; i++) {
-		// std::cout << "i : " << i << std::endl;
 		(this->_tab[i])->display();
 	}
 }
@@ -88,7 +87,7 @@ void	RenderMachine::removePrintable(unsigned int idx) {
 	unsigned int	i;
 
 	for (i = 0; i < idx; i ++) {
-		new_tab[i] =this->_tab[i - 1];
+		new_tab[i] =this->_tab[i];
 	}
 	i++;
 	for (; i < this->_amount; i++) {
@@ -99,7 +98,19 @@ void	RenderMachine::removePrintable(unsigned int idx) {
 	else
 		std::cout << "You aren't supposed to be here. There probably was an error.. " << std::endl;
 	this->_tab = new_tab;
+	this->_amount--;
 }
+
+void	RenderMachine::removePrintable(IPrintable *obj) {
+	for (unsigned int i = 0; i < this->_amount; i++) {
+		if (this->_tab[i] == obj) {
+			this->removePrintable(i);
+			return ;
+		}
+	}
+	std::cout << "There was an error while trying to REMOVE a printable." << std::endl;
+}
+
 
 IPrintable	*RenderMachine::getPrintable(unsigned int idx) {
 	if (idx >= this->_amount) {

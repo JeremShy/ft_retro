@@ -82,8 +82,8 @@ void	MotorMachine::removeMovable(unsigned int idx) {
 	AMovable		**new_tab = new AMovable*[this->_amount - 1];
 	unsigned int	i;
 
-	for (i = 0; i < idx; i ++) {
-		new_tab[i] =this->_tab[i - 1];
+	for (i = 0; i < idx ; i++) {
+		new_tab[i] = this->_tab[i];
 	}
 	i++;
 	for (; i < this->_amount; i++) {
@@ -94,6 +94,18 @@ void	MotorMachine::removeMovable(unsigned int idx) {
 	else
 		std::cout << "You aren't supposed to be here. There probably was an error.. " << std::endl;
 	this->_tab = new_tab;
+	this->_amount--;
+}
+
+void	MotorMachine::removeMovable(AMovable *obj) {
+	for (unsigned int i = 0; i < this->_amount; i++) {
+		if (this->_tab[i] == obj) {
+			std::cout << "Object found at position " << i <<std::endl;
+			this->removeMovable(i);
+			return ;
+		}
+	}
+	std::cout << "There was an error while trying to REMOVE a movable." << std::endl;
 }
 
 AMovable	*MotorMachine::getMovable(unsigned int idx) {

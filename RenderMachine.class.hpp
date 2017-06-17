@@ -4,8 +4,9 @@
 # include <string>
 # include <iostream>
 # include "IPrintable.class.hpp"
+# include "Machine.class.hpp"
 
-class RenderMachine {
+class RenderMachine : public Machine{
 public:
 	RenderMachine(void);
 	RenderMachine(RenderMachine const & src);
@@ -18,6 +19,7 @@ public:
 	void	addPrintable(unsigned int id, IPrintable *obj);
 	void	addPrintable(IPrintable *obj);
 	void	removePrintable(unsigned int id);
+	void	removePrintable(IPrintable *obj);
 	IPrintable	*getPrintable(unsigned int _id);
 
 	unsigned int	getAmount(void) const;

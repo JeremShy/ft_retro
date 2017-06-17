@@ -10,7 +10,8 @@ SRC_NAME =	Enemy.class.cpp \
 						display.cpp \
 						main.cpp \
 						AMovable.class.cpp \
-						MotorMachine.class.cpp
+						MotorMachine.class.cpp \
+						Machine.class.cpp
 
 INC_PATH = ./
 OBJ_PATH = ./obj/

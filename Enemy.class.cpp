@@ -6,7 +6,7 @@ Enemy::Enemy(char model, unsigned int health, unsigned int damage) : GameEntity(
 	return;
 }
 
-Enemy::Enemy(Enemy const & cpy) : GameEntity(cpy.getModel(), cpy.getRealPositionX(), cpy.getRealPositionY(), cpy.getHealth(), cpy.getDamage()){
+Enemy::Enemy(Enemy const & cpy) : GameEntity(cpy){
 	// *this = cpy;
 	return;
 }
