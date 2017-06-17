@@ -1,10 +1,10 @@
 #include "Bullet.class.hpp"
 
-Bullet::Bullet(int x, int y, int damage) : _x(x), _y(y), _damage(damage){
+Bullet::Bullet(int x, int y, int damage, GameEntity * shooter) : _x(x), _y(y), _damage(damage), _shooter(shooter){
 	return;
 }
 
-Bullet::Bullet(Bullet const & cpy) : _damage(cpy.getDamage()){
+Bullet::Bullet(Bullet const & cpy) : _x(cpy.getPositionX()), _y(cpy.getPositionY()), _damage(cpy.getDamage()), _shooter(cpy.getShooter()){
 	return;
 }
 
@@ -13,6 +13,7 @@ Bullet & 			Bullet::operator=(Bullet const & rhs){
 		this->setPositionX(rhs.getPositionX());
 		this->setPositionY(rhs.getPositionY());
 		this->setDamage(rhs.getDamage());
+		this->setShooter(rhs.getShooter());
 	}
 	return *this;
 }
@@ -25,7 +26,7 @@ Bullet::~Bullet(void){
 	return;
 }
 
-void				Bullet::display(void) const{
+void				Bullet::display(void){
 	/* do something */
 }
 
@@ -51,6 +52,11 @@ void				Bullet::setDamage(int damage){
 	return;
 }
 
+void				Bullet::setShooter(GameEntity * shooter){
+	this->_shooter = shooter;
+	return;
+}
+
 /*--------------------------------------------getter*/
 
 int					Bullet::getPositionX(void) const{
@@ -63,4 +69,8 @@ int					Bullet::getPositionY(void) const{
 
 int					Bullet::getDamage(void) const{
 	return this->_damage;
+}
+
+GameEntity *		Bullet::getShooter(void) const{
+	return this->_shooter;
 }

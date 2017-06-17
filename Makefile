@@ -4,6 +4,7 @@ SRC_NAME =	Enemy.class.cpp \
 						EnemyEvents.cpp \
 						GameEntity.class.cpp \
 						Hero.class.cpp \
+						Bullet.class.cpp \
 						IPrintable.class.cpp \
 						RenderMachine.class.cpp \
 						display.cpp \
