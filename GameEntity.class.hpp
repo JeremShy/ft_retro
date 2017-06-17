@@ -11,6 +11,8 @@ public:
 
 	GameEntity & 	operator=(GameEntity const &);
 
+	GameEntity *	clone();
+
 	void			takeDamage(unsigned int);
 	void			display(void);
 

@@ -23,6 +23,10 @@ GameEntity & 		GameEntity::operator=(GameEntity const & rhs){
 	return *this;
 }
 
+GameEntity *		GameEntity::clone(void){
+	return new GameEntity(*this);
+}
+
 void				GameEntity::takeDamage(unsigned int damage){
 	this->setHealth(this->getDamage() - damage);
 	if (this->getHealth() <= 0) {
