@@ -7,24 +7,31 @@
 #include "IPrintable.class.hpp"
 #include "RenderMachine.class.hpp"
 #include "display.hpp"
+#include "direction.enum.hpp"
+#include <curses.h>
 
 
 int main() {
 	RenderMachine machine;
-	machine.addPrintable(spawnRand());
-	machine.addPrintable(spawnRand());
-	machine.addPrintable(spawnRand());
-	machine.addPrintable(spawnRand());
-	machine.addPrintable(spawnRand());
+	Hero hero;
+	int ch ;
+
+	machine.addPrintable(&hero);
 	machine.describe();
 
 	init_ncurse();
 	machine.renderAll();
 	while (1) {
-		char ch = getch();
-		if (ch == 27) {
-			endwin();
-			return (0);
+		refresh();
+		ch = getch();
+		switch (ch){
+			case KEY_UP:
+				close_ncurse();
+				return 0;
+				break;
+			default:
+			break;
 		}
 	}
+
 }

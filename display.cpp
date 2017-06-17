@@ -6,7 +6,9 @@ void	print_ge(GameEntity *target) {
 
 void	init_ncurse(void) {
 	initscr();
-	raw();
+	noecho();
+	cbreak();
+	keypad(stdscr, TRUE);
 }
 
 void	close_ncurse(void) {
