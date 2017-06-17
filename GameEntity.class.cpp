@@ -25,7 +25,7 @@ GameEntity & 		GameEntity::operator=(GameEntity const & rhs){
 
 void				GameEntity::takeDamage(unsigned int damage){
 	this->setHealth(this->getDamage() - damage);
-	if (this->getHealth() == 0){
+	if (this->getHealth() <= 0) {
 		// die
 	}
 	return;

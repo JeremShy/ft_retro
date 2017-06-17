@@ -1,7 +1,9 @@
 #ifndef GAME_ENTITY_HPP
 # define GAME_ENTITY_HPP
 
-class GameEntity
+# include "IPrintable.class.hpp"
+
+class GameEntity : public IPrintable
 {
 public:
 	GameEntity(char const model, unsigned int, unsigned int, unsigned int, unsigned int);
@@ -10,6 +12,7 @@ public:
 	GameEntity & 	operator=(GameEntity const &);
 
 	void			takeDamage(unsigned int);
+	void			display(void);
 
 	char			getModel(void) const;
 	unsigned int 	getHealth(void) const;
