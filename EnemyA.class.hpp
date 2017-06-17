@@ -13,11 +13,6 @@ public:
 
 	~EnemyA();
 
-private:
-	static const int 			c_model = 'A';
-	static const unsigned int	c_health = 10;
-	static const unsigned int	c_damage = 0;
-	
 };
 
 #endif

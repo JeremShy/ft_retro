@@ -36,7 +36,9 @@ void			Enemy::attack(void) const{
 
 void			Enemy::takeDamage(unsigned int damage){
 	this->setHealth(this->getDamage() - damage);
-	if (this->getHealth() == 0)
+	if (this->getHealth() == 0){
 		delete this;
+		this = NULL;
+	}
 	return;
 }

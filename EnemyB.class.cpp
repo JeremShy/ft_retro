@@ -1,18 +1,18 @@
-#include "EnemyA.class.hpp"
+#include "EnemyB.class.hpp"
 
-EnemyA::EnemyA(void) : Enemy('A', 10, 0){
+EnemyB::EnemyB(void) : Enemy('B', 35, 0){
 	return;
 }
 
-EnemyA::EnemyA(EnemyA const & cpy) : Enemy(cpy.getModel(), cpy.getHealth(), cpy.getDamage()){
+EnemyB::EnemyB(EnemyB const & cpy) : Enemy(cpy.getModel(), cpy.getHealth(), cpy.getDamage()){
 	return;
 }
 
-EnemyA::~EnemyA(void){
+EnemyB::~EnemyB(void){
 	return;
 }
 
-EnemyA &		EnemyA::operator=(EnemyA const & rhs){
+EnemyB &		EnemyB::operator=(EnemyB const & rhs){
 	if (this != &rhs){
 		this->setModel(rhs.getModel());
 		this->setPositionX(rhs.getPositionX());
