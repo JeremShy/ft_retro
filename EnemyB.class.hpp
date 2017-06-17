@@ -2,6 +2,7 @@
 # define ENEMY_B_CLBSS_HPP
 
 #include "Enemy.class.hpp"
+#include "Movable.class.hpp"
 #include <iostream>
 
 class EnemyB : public Enemy
