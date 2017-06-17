@@ -4,19 +4,20 @@
 class GameEntity
 {
 public:
-	GameEntity(char const model);
+	GameEntity(char const model, unsigned int, unsigned int, unsigned int, unsigned int);
 	GameEntity(GameEntity const & cpy);
 
 	GameEntity & 	operator=(GameEntity const &);
 
 	void			takeDamage(unsigned int);
 
-	char const		getModel(void) const;
+	char			getModel(void) const;
 	unsigned int 	getHealth(void) const;
 	unsigned int 	getDamage(void) const;
 	unsigned int 	getPositionX(void) const;
 	unsigned int 	getPositionY(void) const;
 
+	void			setModel(char model);
 	void			setHealth(unsigned int);
 	void			setDamage(unsigned int);
 	void			setPositionX(unsigned int);
@@ -25,7 +26,7 @@ public:
 	virtual ~GameEntity();
 
 private:
-	char const		_model;
+	char 			_model;
 	unsigned int 	_x;
 	unsigned int 	_y;
 	unsigned int 	_health;
