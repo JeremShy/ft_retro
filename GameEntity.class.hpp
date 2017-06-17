@@ -31,7 +31,7 @@ private:
 	unsigned int 	_y;
 	unsigned int 	_health;
 	unsigned int 	_damage;
-	
+
 };
 
 #endif
