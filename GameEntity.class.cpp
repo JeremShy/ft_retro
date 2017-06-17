@@ -1,4 +1,5 @@
 #include "GameEntity.class.hpp"
+#include "display.hpp"
 
 GameEntity::GameEntity(char model, unsigned int x = 0, unsigned int y = 0, unsigned int health = 0, unsigned int damage = 0) : _model(model), _x(x), _y(y), _health(health), _damage(damage){
 	return;
@@ -25,6 +26,19 @@ GameEntity & 		GameEntity::operator=(GameEntity const & rhs){
 
 GameEntity *		GameEntity::clone(void){
 	return new GameEntity(*this);
+}
+
+void						GameEntity::attack(void) {
+	// Is this method really useful ?
+}
+
+void						GameEntity::attack(GameEntity *target) {
+	//Maybe decrement the ammo count.
+	target->takeDamage(this->_damage);
+}
+
+void					GameEntity::takeDamage(unsigned int amount) {
+	//Maybe decrement with the armor of the GE.
 }
 
 /*-----------------------------------------------------------getter*/
@@ -74,4 +88,8 @@ void				GameEntity::setHealth(unsigned int health){
 void				GameEntity::setDamage(unsigned int damage){
 	this->_damage = damage;
 	return;
+}
+
+void				GameEntity::display(void) {
+	print_ge(this);
 }

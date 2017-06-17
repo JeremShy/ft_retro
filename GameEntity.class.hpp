@@ -18,8 +18,9 @@ public:
 
 	virtual GameEntity *	clone();
 
-	void					display(void);
+	void							display(void);
 	virtual void			attack(void);
+	virtual void			attack(GameEntity *target);
 	virtual void			takeDamage(unsigned int);
 	virtual void			move(int input);
 
