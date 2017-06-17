@@ -3,8 +3,9 @@
 
 # include "IPrintable.class.hpp"
 # include "GameEntity.class.hpp"
+# include "AMovable.class.hpp"
 
-class Bullet : public IPrintable
+class Bullet : public IPrintable, public AMovable
 {
 public:
 	Bullet(int x, int y, int damage, GameEntity * shooter);
@@ -12,15 +13,9 @@ public:
 
 	Bullet &		operator=(Bullet const & rhs);
 
-	void			move(void);
-
-	int 			getPositionX(void) const;
-	int 			getPositionY(void) const;
 	int 			getDamage(void) const;
 	GameEntity *	getShooter(void) const;
 
-	void			setPositionX(int x);
-	void			setPositionY(int y);
 	void			setDamage(int damage);
 	void			setShooter(GameEntity * shooter);
 
@@ -31,8 +26,6 @@ public:
 	~Bullet();
 
 private:
-	int 			_x;
-	int 			_y;
 	int 			_damage;
 	GameEntity *	_shooter;
 

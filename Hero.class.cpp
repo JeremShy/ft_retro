@@ -4,7 +4,7 @@ Hero::Hero(void) : GameEntity('H', 0, 0, 100, 20){
 	return;
 }
 
-Hero::Hero(Hero const & cpy) : GameEntity(cpy.getModel(), cpy.getPositionX(), cpy.getPositionY(), cpy.getHealth(), cpy.getDamage()){
+Hero::Hero(Hero const & cpy) : GameEntity(cpy.getModel(), cpy.getRealPositionX(), cpy.getRealPositionY(), cpy.getHealth(), cpy.getDamage()){
 	*this = cpy;
 	return;
 }
@@ -16,8 +16,8 @@ Hero::~Hero(void){
 Hero &			Hero::operator=(Hero const & rhs){
 	if (this != &rhs){
 		this->setModel(rhs.getModel());
-		this->setPositionX(rhs.getPositionX());
-		this->setPositionY(rhs.getPositionY());
+		this->setRealPositionX(rhs.getRealPositionX());
+		this->setRealPositionY(rhs.getRealPositionY());
 		this->setHealth(rhs.getHealth());
 		this->setDamage(rhs.getDamage());
 	}
@@ -39,20 +39,3 @@ void			Hero::takeDamage(unsigned int damage){
 	}
 	return;
 }
-
-// void			Hero::move(int input){
-// 	switch (input){
-// 		case UP_ARROW :
-// 			this->setPositionY(this->getPositionY() + 1);
-// 			break;
-// 		case DOWN_ARROW :
-// 			this->setPositionY(this->getPositionY() - 1);
-// 			break;
-// 		case RIGHT_ARROW :
-// 			this->setPositionX(this->getPositionX() + 1);
-// 			break;
-// 		case LEFT_ARROW :
-// 			this->setPositionX(this->getPositionX() - 1);
-// 			break;
-// 	}
-// }

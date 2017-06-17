@@ -1,17 +1,17 @@
 #include "Bullet.class.hpp"
 
-Bullet::Bullet(int x, int y, int damage, GameEntity * shooter) : _x(x), _y(y), _damage(damage), _shooter(shooter){
+Bullet::Bullet(int x, int y, int damage, GameEntity * shooter) : AMovable(x, y), _damage(damage), _shooter(shooter){
 	return;
 }
 
-Bullet::Bullet(Bullet const & cpy) : _x(cpy.getPositionX()), _y(cpy.getPositionY()), _damage(cpy.getDamage()), _shooter(cpy.getShooter()){
+Bullet::Bullet(Bullet const & cpy) : AMovable(cpy.getRealPositionX(), cpy.getRealPositionY()), _damage(cpy.getDamage()), _shooter(cpy.getShooter()){
 	return;
 }
 
 Bullet & 			Bullet::operator=(Bullet const & rhs){
 	if (this != &rhs){
-		this->setPositionX(rhs.getPositionX());
-		this->setPositionY(rhs.getPositionY());
+		this->setRealPositionX(rhs.getRealPositionX());
+		this->setRealPositionY(rhs.getRealPositionY());
 		this->setDamage(rhs.getDamage());
 		this->setShooter(rhs.getShooter());
 	}
@@ -34,23 +34,7 @@ void				Bullet::erase(void){
 	/* do something */
 }
 
-
-void				Bullet::move(void){
-	this->setPositionX(this->getPositionX() + 1);
-	return;
-}
-
 /*--------------------------------------------setter*/
-
-void				Bullet::setPositionX(int x){
-	this->_x = x;
-	return;
-}
-
-void				Bullet::setPositionY(int y){
-	this->_y = y;
-	return;
-}
 
 void				Bullet::setDamage(int damage){
 	this->_damage = damage;
@@ -63,14 +47,6 @@ void				Bullet::setShooter(GameEntity * shooter){
 }
 
 /*--------------------------------------------getter*/
-
-int					Bullet::getPositionX(void) const{
-	return this->_x;
-}
-
-int					Bullet::getPositionY(void) const{
-	return this->_y;
-}
 
 int					Bullet::getDamage(void) const{
 	return this->_damage;

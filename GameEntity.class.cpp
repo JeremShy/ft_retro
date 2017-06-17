@@ -5,7 +5,7 @@ GameEntity::GameEntity(char model, unsigned int x = 0, unsigned int y = 0, unsig
 	return;
 }
 
-GameEntity::GameEntity(GameEntity const & cpy) : AMovable(cpy._x, cpy._y), _model(cpy.getModel()), _health(cpy.getHealth()), _damage(cpy.getDamage()){
+GameEntity::GameEntity(GameEntity const & cpy) : AMovable(cpy.getRealPositionX(), cpy.getRealPositionY()), _model(cpy.getModel()), _health(cpy.getHealth()), _damage(cpy.getDamage()){
 	return;
 }
 
@@ -16,8 +16,8 @@ GameEntity::~GameEntity(void){
 GameEntity & 		GameEntity::operator=(GameEntity const & rhs){
 	if (this != &rhs){
 		this->setModel(rhs.getModel());
-		this->setPositionX(rhs.getPositionX());
-		this->setPositionY(rhs.getPositionY());
+		this->setRealPositionX(rhs.getRealPositionX());
+		this->setRealPositionY(rhs.getRealPositionY());
 		this->setHealth(rhs.getHealth());
 		this->setDamage(rhs.getDamage());
 	}
@@ -70,7 +70,7 @@ void				GameEntity::setDamage(unsigned int damage){
 
 void				GameEntity::display(void) {
 	mvaddch(this->getPositionY(), this->getPositionX(), this->getModel());
-	// std::cout << "Displaying with values : " << this->_x << " - " << this->_y << std::endl;
+	// std::cout << "Displaying with values : " << this->getPositionX() << " - " << this->getPositionY() << std::endl;
 }
 
 void				GameEntity::erase(void) {

@@ -11,7 +11,9 @@ AMovable::AMovable(AMovable const & src) : _x(src._x), _y(src._y) {
 }
 
 AMovable::AMovable(int x, int y) : _x(x), _y(y) {
-
+	// std::cout << "HERE : " << x << " - " << y << std::endl;
+	(this->_direction)[0] = 0;
+	(this->_direction)[1] = 0;
 }
 
 AMovable::~AMovable(void) {
@@ -41,16 +43,28 @@ void				AMovable::setPositionY(unsigned int y){
 	return;
 }
 
-void			AMovable::setDirection(unsigned int tab[2]) {
+
+void 				AMovable::setRealPositionX(float x) {
+	this->_x = x;
+	return;
+}
+
+void 				AMovable::setRealPositionY(float y) {
+	this->_y = y;
+	return;
+}
+
+
+void			AMovable::setDirection(float tab[2]) {
 	this->_direction[0] = tab[0];
 	this->_direction[1] = tab[0];
 }
 
-void			AMovable::setDirectionX(unsigned int x) {
+void			AMovable::setDirectionX(float x) {
 	this->_direction[0] = x;
 }
 
-void			AMovable::setDirectionY(unsigned int y) {
+void			AMovable::setDirectionY(float y) {
 	this->_direction[1] = y;
 }
 
@@ -61,4 +75,11 @@ unsigned int		AMovable::getPositionX(void) const{
 
 unsigned int		AMovable::getPositionY(void) const{
 	return this->_y;
+}
+
+float 				AMovable::getRealPositionX(void) const {
+	return (this->_x);
+}
+float 				AMovable::getRealPositionY(void) const {
+	return (this->_y);
 }

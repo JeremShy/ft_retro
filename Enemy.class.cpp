@@ -6,7 +6,7 @@ Enemy::Enemy(char model, unsigned int health, unsigned int damage) : GameEntity(
 	return;
 }
 
-Enemy::Enemy(Enemy const & cpy) : GameEntity(cpy.getModel(), cpy.getPositionX(), cpy.getPositionY(), cpy.getHealth(), cpy.getDamage()){
+Enemy::Enemy(Enemy const & cpy) : GameEntity(cpy.getModel(), cpy.getRealPositionX(), cpy.getRealPositionY(), cpy.getHealth(), cpy.getDamage()){
 	// *this = cpy;
 	return;
 }
@@ -18,8 +18,8 @@ Enemy::~Enemy(void){
 Enemy &			Enemy::operator=(Enemy const & rhs){
 	if (this != &rhs){
 		this->setModel(rhs.getModel());
-		this->setPositionX(rhs.getPositionX());
-		this->setPositionY(rhs.getPositionY());
+		this->setRealPositionX(rhs.getRealPositionX());
+		this->setRealPositionY(rhs.getRealPositionY());
 		this->setHealth(rhs.getHealth());
 		this->setDamage(rhs.getDamage());
 	}
@@ -39,12 +39,6 @@ void			Enemy::takeDamage(unsigned int damage){
 	if (this->getHealth() == 0){
 		delete this;
 	}
-	return;
-}
-
-void			Enemy::move(int input=-1){
-	if (input == -1)
-		this->setPositionX(this->getPositionX() - 1);
 	return;
 }
 

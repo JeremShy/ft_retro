@@ -25,11 +25,10 @@ int main() {
 	// rmachine.describe();
 //
 	init_ncurse();
-	timeout(200);
+	timeout(20);
 	while (1) {
 		rmachine.eraseAll();
 		mmachine.moveAll();
-		hero.move();
 		rmachine.renderAll();
 		refresh();
 		ch = getch();
@@ -39,7 +38,7 @@ int main() {
 				return 0;
 				break;
 			case KEY_DOWN:
-				hero.setDirectionY(1);
+				hero.setDirectionY(0.1);
 				break;
 			default:
 				break;

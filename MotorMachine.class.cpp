@@ -42,7 +42,7 @@ void	MotorMachine::addMovable(unsigned int idx, AMovable *obj) { // TO DO : Test
 		std::cout << "There was an error while trying to ADD a movable on the MotorMachine at position " << idx << ". There are only " << this->_amount << " movables in the table." << std::endl;
 		return ;
 	}
-	std::cout << "id : " << idx << std::endl;
+	// std::cout << "id : " << idx << std::endl;
 	if (this->_amount == 0) {
 		if (this->_tab != NULL) { //_tab is supposed to be null if _amount == 0, but still..
 			delete [] this->_tab;

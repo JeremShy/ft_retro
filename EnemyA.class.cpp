@@ -15,8 +15,8 @@ EnemyA::~EnemyA(void){
 EnemyA &		EnemyA::operator=(EnemyA const & rhs){
 	if (this != &rhs){
 		this->setModel(rhs.getModel());
-		this->setPositionX(rhs.getPositionX());
-		this->setPositionY(rhs.getPositionY());
+		this->setRealPositionX(rhs.getRealPositionX());
+		this->setRealPositionY(rhs.getRealPositionY());
 		this->setHealth(rhs.getHealth());
 		this->setDamage(rhs.getDamage());
 	}
