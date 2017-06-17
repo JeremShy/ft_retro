@@ -27,14 +27,6 @@ GameEntity *		GameEntity::clone(void){
 	return new GameEntity(*this);
 }
 
-void				GameEntity::takeDamage(unsigned int damage){
-	this->setHealth(this->getDamage() - damage);
-	if (this->getHealth() == 0){
-		// die
-	}
-	return;
-}
-
 /*-----------------------------------------------------------getter*/
 
 char				GameEntity::getModel(void) const{
