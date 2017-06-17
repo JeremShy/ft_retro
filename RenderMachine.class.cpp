@@ -102,3 +102,9 @@ IPrintable	*RenderMachine::getPrintable(unsigned int idx) {
 unsigned int	RenderMachine::getAmount(void) const {
 	return (this->_amount);
 }
+
+void					RenderMachine::describe() {
+	for (unsigned int i = 0; i < this->_amount; i++) {
+		std::cout << "[" << i << "] : " << this->_tab[i] << std::endl;
+	}
+}

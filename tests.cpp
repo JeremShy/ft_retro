@@ -6,10 +6,10 @@
 #include "IPrintable.class.hpp"
 #include "RenderMachine.class.hpp"
 #include "display.hpp"
+#include <sstream>
+#include <iostream>
 
 
 int main() {
-	Enemy **tab = new Enemy*[20];
-	*tab = new EnemyA[10];
-	*(tab + 10) = new EnemyB[10];
+	RenderMachine = new RenderMachine();
 }
