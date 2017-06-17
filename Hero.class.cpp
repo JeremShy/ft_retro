@@ -1,12 +1,10 @@
 #include "Hero.class.hpp"
 
-Hero::Hero(void) : GameEntity('H'){
-	this->setHealth(100);
-	this->setDamage(20);
+Hero::Hero(void) : GameEntity('H', 0, 0, 100, 20){
 	return;
 }
 
-Hero::Hero(Hero const & cpy) : GameEntity(cpy.getModel()){
+Hero::Hero(Hero const & cpy) : GameEntity(cpy.getModel(), cpy.getPositionX(), cpy.getPositionY(), cpy.getHealth(), cpy.getDamage()){
 	*this = cpy;
 	return;
 }
