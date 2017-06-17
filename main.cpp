@@ -9,24 +9,28 @@
 #include "RenderMachine.class.hpp"
 #include "display.hpp"
 #include "direction.enum.hpp"
-#include "Movable.class.hpp"
+#include "AMovable.class.hpp"
+#include "MotorMachine.class.hpp"
 #include <curses.h>
 
 
 int main() {
-	RenderMachine machine;
+	RenderMachine rmachine;
+	MotorMachine	mmachine;
 	Hero hero;
 	int ch ;
 
-	machine.addPrintable(&hero);
-	machine.describe();
-
+	rmachine.addPrintable(&hero);
+	mmachine.addMovable(&hero);
+	// rmachine.describe();
+//
 	init_ncurse();
 	timeout(200);
 	while (1) {
-		machine.eraseAll();
+		rmachine.eraseAll();
+		mmachine.moveAll();
 		hero.move();
-		machine.renderAll();
+		rmachine.renderAll();
 		refresh();
 		ch = getch();
 		switch (ch){

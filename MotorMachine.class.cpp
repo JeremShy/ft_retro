@@ -7,7 +7,7 @@ MotorMachine::MotorMachine(void) : _tab(NULL), _amount(0){
 MotorMachine::MotorMachine(MotorMachine const & src) : _amount(src._amount){
 	if (this->_tab)
 		delete [] this->_tab;
-	this->_tab = new Movable*[src._amount];
+	this->_tab = new AMovable*[src._amount];
 	for (unsigned int i = 0; i < src._amount; i++) {
 		this->_tab[i] = src._tab[i]->clone();
 	}
@@ -22,30 +22,24 @@ MotorMachine & MotorMachine::operator=(MotorMachine const & rhs) {
 	if (this->_tab)
 		delete [] this->_tab;
 	this->_amount = rhs._amount;
-	this->_tab = new Movable*[rhs._amount];
+	this->_tab = new AMovable*[rhs._amount];
 	for (unsigned int i = 0; i < rhs._amount; i++) {
 		this->_tab[i] = rhs._tab[i]->clone();
 	}
 	return (*this);
 }
 
-void	MotorMachine::renderAll(void) {
+void	MotorMachine::moveAll(void) {
 	for (unsigned int i = 0; i < this->_amount; i++) {
 		// std::cout << "i : " << i << std::endl;
-		(this->_tab[i])->display();
+		(this->_tab[i])->move();
 	}
 }
 
-void	MotorMachine::eraseAll(void) {
-	for (unsigned int i = 0; i < this->_amount; i++) {
-		// std::cout << "i : " << i << std::endl;
-		(this->_tab[i])->erase();
-	}
-}
 
-void	MotorMachine::addPrintable(unsigned int idx, Movable *obj) { // TO DO : Tester quand les iprintable seront fonctionels.
+void	MotorMachine::addMovable(unsigned int idx, AMovable *obj) { // TO DO : Tester quand les iprintable seront fonctionels.
 	if (idx > this->_amount + 1) {
-		std::cout << "There was an error while trying to ADD a printable on the MotorMachine at position " << idx << ". There is only " << this->_amount << " printables in the table." << std::endl;
+		std::cout << "There was an error while trying to ADD a movable on the MotorMachine at position " << idx << ". There are only " << this->_amount << " movables in the table." << std::endl;
 		return ;
 	}
 	std::cout << "id : " << idx << std::endl;
@@ -53,12 +47,13 @@ void	MotorMachine::addPrintable(unsigned int idx, Movable *obj) { // TO DO : Tes
 		if (this->_tab != NULL) { //_tab is supposed to be null if _amount == 0, but still..
 			delete [] this->_tab;
 		}
-		this->_tab = new Movable*[1];
+		this->_tab = new AMovable*[1];
 		this->_tab[0] = obj;
 		this->_amount = 1;
 		return ;
 	}
-	Movable **new_tab = new Movable*[this->_amount + 1];
+
+	AMovable **new_tab = new AMovable*[this->_amount + 1];
 	unsigned int i;
 
 	for (i = 0; i < idx; i++) {
@@ -74,17 +69,17 @@ void	MotorMachine::addPrintable(unsigned int idx, Movable *obj) { // TO DO : Tes
 	this->_amount++;
 }
 
-void	MotorMachine::addPrintable(Movable *obj) {
-	this->addPrintable(this->_amount, obj);
+void	MotorMachine::addMovable(AMovable *obj) {
+	this->addMovable(this->_amount, obj);
 }
 
-void	MotorMachine::removePrintable(unsigned int idx) {
+void	MotorMachine::removeMovable(unsigned int idx) {
 	if (idx >= this->_amount) {
-		std::cout << "There was an error while trying to REMOVE a printable on the MotorMachine at position " << idx << ". There is only " << this->_amount << " printables in the table." << std::endl;
+		std::cout << "There was an error while trying to REMOVE a movable on the MotorMachine at position " << idx << ". There are only " << this->_amount << " movables in the table." << std::endl;
 		return ;
 	}
 
-	Movable		**new_tab = new Movable*[this->_amount - 1];
+	AMovable		**new_tab = new AMovable*[this->_amount - 1];
 	unsigned int	i;
 
 	for (i = 0; i < idx; i ++) {
@@ -101,9 +96,9 @@ void	MotorMachine::removePrintable(unsigned int idx) {
 	this->_tab = new_tab;
 }
 
-Movable	*MotorMachine::getPrintable(unsigned int idx) {
+AMovable	*MotorMachine::getMovable(unsigned int idx) {
 	if (idx >= this->_amount) {
-		std::cout << "There was an error while trying to GET a printable on the MotorMachine at position " << idx << ". There is only " << this->_amount << " printables in the table. Returning NULL." << std::endl;
+		std::cout << "There was an error while trying to GET a movable on the MotorMachine at position " << idx << ". There are only " << this->_amount << " printables in the table. Returning NULL." << std::endl;
 		return NULL;
 	}
 	return (this->_tab[idx]);

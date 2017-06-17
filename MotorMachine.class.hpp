@@ -3,7 +3,7 @@
 
 # include <string>
 # include <iostream>
-# include "Movable.class.hpp"
+# include "AMovable.class.hpp"
 
 class MotorMachine {
 public:
@@ -14,17 +14,17 @@ public:
 	MotorMachine & operator=(MotorMachine const & rhs);
 
 	void	moveAll(void);
-	void	addMovable(unsigned int id, Movable *obj);
-	void	addMovable(Movable *obj);
+	void	addMovable(unsigned int id, AMovable *obj);
+	void	addMovable(AMovable *obj);
 	void	removeMovable(unsigned int id);
-	Movable	*getMovable(unsigned int _id);
+	AMovable	*getMovable(unsigned int _id);
 
 	unsigned int	getAmount(void) const;
 
 	void	describe(void);
 
 private:
-	Movable		**_tab;
+	AMovable		**_tab;
 	unsigned int	_amount;
 };
 

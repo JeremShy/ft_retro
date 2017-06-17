@@ -2,7 +2,7 @@
 # define ENEMY_A_CLASS_HPP
 
 #include "Enemy.class.hpp"
-#include "Movable.class.hpp"
+#include "AMovable.class.hpp"
 #include <iostream>
 
 class EnemyA : public Enemy
