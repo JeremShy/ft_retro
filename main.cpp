@@ -4,6 +4,7 @@
 #include "EnemyEvents.hpp"
 #include "GameEntity.class.hpp"
 #include "Hero.class.hpp"
+#include "Bullet.class.hpp"
 #include "IPrintable.class.hpp"
 #include "RenderMachine.class.hpp"
 #include "display.hpp"
