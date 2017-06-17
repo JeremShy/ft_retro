@@ -34,13 +34,20 @@ int main() {
 		ch = getch();
 		switch (ch){
 			case KEY_UP:
-				close_ncurse();
-				return 0;
+				hero.setDirectionY(-0.5);
 				break;
 			case KEY_DOWN:
-				hero.setDirectionY(0.1);
+				hero.setDirectionY(0.5);
+				break;
+			case KEY_LEFT:
+				hero.setDirectionX(-0.5);
+				break;
+			case KEY_RIGHT:
+				hero.setDirectionX(0.5);
 				break;
 			default:
+				hero.setDirectionY(0);
+				hero.setDirectionX(0);
 				break;
 		}
 	}
