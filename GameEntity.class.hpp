@@ -11,7 +11,7 @@ public:
 
 	void			takeDamage(unsigned int);
 
-	char const		getModel(void) const;
+	char 					getModel(void) const;
 	unsigned int 	getHealth(void) const;
 	unsigned int 	getDamage(void) const;
 	unsigned int 	getPositionX(void) const;
@@ -30,7 +30,7 @@ private:
 	unsigned int 	_y;
 	unsigned int 	_health;
 	unsigned int 	_damage;
-	
+
 };
 
 #endif
