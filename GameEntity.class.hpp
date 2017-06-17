@@ -6,12 +6,12 @@
 class GameEntity : public IPrintable
 {
 public:
-	GameEntity(char const model, unsigned int, unsigned int, unsigned int, unsigned int);
+	GameEntity(char const model, unsigned int x, unsigned int y, unsigned int health, unsigned int damage);
 	GameEntity(GameEntity const & cpy);
 
 	GameEntity & 	operator=(GameEntity const &);
 
-	GameEntity *	clone();
+	virtual GameEntity *	clone();
 
 	void					display(void);
 	virtual void			attack(void);

@@ -1,4 +1,6 @@
-Hero::Hero(void) : GameEntity(this->c_model){
+#include "Hero.class.hpp"
+
+Hero::Hero(void) : GameEntity((char)this->c_model){
 	this->setHealth(this->c_health);
 	this->setDamage(this->c_damage);
 	return;

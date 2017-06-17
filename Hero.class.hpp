@@ -1,6 +1,8 @@
 #ifndef HERO_CLASS_HPP
 # define HERO_CLASS_HPP
 
+#include "GameEntity.class.hpp"
+
 class Hero : public GameEntity
 {
 public:
@@ -17,9 +19,9 @@ public:
 	~Hero();
 
 private:
-	char const			c_model = 'H'; //You might change that but anyway
-	unsigned int const	c_health = 100;
-	unsigned int const	c_damage = 20;
+	static const int			c_model = 'H'; //You might change that but anyway
+	static const unsigned int	c_health = 100;
+	static const unsigned int	c_damage = 20;
 	
 };
 
