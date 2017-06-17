@@ -30,7 +30,7 @@ Hero *			Hero::clone(void){
 	return new Hero(*this);
 }
 
-void			Hero::attack(void) const{
+void			Hero::attack(void){
 
 }
 

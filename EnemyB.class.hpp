@@ -2,14 +2,15 @@
 # define ENEMY_B_CLBSS_HPP
 
 #include "Enemy.class.hpp"
+#include <iostream>
 
 class EnemyB : public Enemy
 {
 public:
 	EnemyB();
-	EnemyB(Enemy const & cpy);
+	EnemyB(EnemyB const & cpy);
 
-	Enemy &		operator=(Enemy const & rhs);
+	EnemyB &		operator=(EnemyB const & rhs);
 
 	~EnemyB();
 
