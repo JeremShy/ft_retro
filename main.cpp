@@ -9,6 +9,7 @@
 #include "RenderMachine.class.hpp"
 #include "display.hpp"
 #include "direction.enum.hpp"
+#include "Movable.class.hpp"
 #include <curses.h>
 
 
