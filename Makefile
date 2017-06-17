@@ -9,7 +9,7 @@ SRC_NAME =	Enemy.class.cpp \
 						RenderMachine.class.cpp \
 						display.cpp \
 						main.cpp \
-						Movable.class.cpp
+						AMovable.class.cpp
 
 INC_PATH = ./
 OBJ_PATH = ./obj/

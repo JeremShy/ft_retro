@@ -4,14 +4,15 @@
 # include <string>
 # include <iostream>
 
-class Movable {
+class AMovable {
 public:
-	Movable(void);
-	Movable(int x, int y);
-	Movable(Movable const & src);
-	~Movable(void);
+	AMovable(void);
+	AMovable(int x, int y);
+	AMovable(AMovable const & src);
+	~AMovable(void);
 
-	Movable & operator=(Movable const & rhs);
+	AMovable & operator=(AMovable const & rhs);
+	virtual		AMovable *clone() = 0;
 
 	unsigned int 	getPositionX(void) const;
 	unsigned int 	getPositionY(void) const;

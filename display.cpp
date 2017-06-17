@@ -12,6 +12,7 @@ void	init_ncurse(void) {
 	initscr();
 	noecho();
 	cbreak();
+	curs_set(0);
 	keypad(stdscr, TRUE);
 }
 

@@ -21,7 +21,7 @@ int main() {
 	machine.describe();
 
 	init_ncurse();
-	timeout(20);
+	timeout(200);
 	while (1) {
 		machine.eraseAll();
 		hero.move();

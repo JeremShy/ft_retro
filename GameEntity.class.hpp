@@ -2,7 +2,7 @@
 # define GAME_ENTITY_HPP
 
 # include "IPrintable.class.hpp"
-# include "Movable.class.hpp"
+# include "AMovable.class.hpp"
 # include "Direction.enum.hpp"
 
 # define UP_ARROW 1
@@ -10,7 +10,7 @@
 # define LEFT_ARROW 3
 # define RIGHT_ARROW 4
 
-class GameEntity : public IPrintable, public Movable
+class GameEntity : public IPrintable, public AMovable
 {
 public:
 	GameEntity(char const model, unsigned int x, unsigned int y, unsigned int health, unsigned int damage);

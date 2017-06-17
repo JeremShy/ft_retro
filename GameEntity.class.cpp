@@ -1,11 +1,11 @@
 #include "GameEntity.class.hpp"
 #include "display.hpp"
 
-GameEntity::GameEntity(char model, unsigned int x = 0, unsigned int y = 0, unsigned int health = 0, unsigned int damage = 0) : Movable(x, y), _model(model), _health(health), _damage(damage){
+GameEntity::GameEntity(char model, unsigned int x = 0, unsigned int y = 0, unsigned int health = 0, unsigned int damage = 0) : AMovable(x, y), _model(model), _health(health), _damage(damage){
 	return;
 }
 
-GameEntity::GameEntity(GameEntity const & cpy) : Movable(cpy._x, cpy._y), _model(cpy.getModel()), _health(cpy.getHealth()), _damage(cpy.getDamage()){
+GameEntity::GameEntity(GameEntity const & cpy) : AMovable(cpy._x, cpy._y), _model(cpy.getModel()), _health(cpy.getHealth()), _damage(cpy.getDamage()){
 	return;
 }
 
