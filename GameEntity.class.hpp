@@ -1,7 +1,9 @@
 #ifndef GAME_ENTITY_HPP
 # define GAME_ENTITY_HPP
 
-class GameEntity
+# include "IPrintable.class.hpp"
+
+class GameEntity : public IPrintable
 {
 public:
 	GameEntity(char const model, unsigned int, unsigned int, unsigned int, unsigned int);
@@ -11,6 +13,7 @@ public:
 
 	GameEntity *	clone();
 
+	void					display(void);
 	virtual void			attack(void);
 	virtual void			takeDamage(unsigned int);
 
