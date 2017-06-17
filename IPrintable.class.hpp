@@ -8,7 +8,7 @@ class IPrintable {
 public:
 	virtual							~IPrintable(void);
 	virtual void				display() = 0;
-	virtual IPrintable	*clone();
+	virtual IPrintable	*clone() = 0;
 };
 
 #endif
