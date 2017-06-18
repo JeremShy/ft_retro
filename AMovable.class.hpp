@@ -13,12 +13,13 @@ public:
 
 	AMovable & operator=(AMovable const & rhs);
 	virtual		AMovable *clone() = 0;
+	bool		doesCollide(AMovable *col);
 
 	unsigned int 	getPositionX(void) const;
 	unsigned int 	getPositionY(void) const;
 
-	float 				getRealPositionX(void) const;
-	float 				getRealPositionY(void) const;
+	float 			getRealPositionX(void) const;
+	float 			getRealPositionY(void) const;
 
 	void			setPositionX(unsigned int);
 	void			setPositionY(unsigned int);
@@ -30,6 +31,9 @@ public:
 	void			setDirectionX(float);
 	void			setDirectionY(float);
 
+
+	//virtual void			takeDamage(unsigned int amount);
+	//virtual unsigned int	getDamage(void) const;
 
 	void			move();
 

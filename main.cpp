@@ -94,7 +94,7 @@ int main() {
 		}
 		if(t2.getDiffAsMillis() >= 1000 / 20) {
 			t2.restart();
-			mmachine.moveAllExcept(hero);
+			mmachine.moveAllExcept(hero, rmachine);
 		}
 		Bullet *bul;
 		clear();
@@ -135,6 +135,5 @@ int main() {
 				hero->setDirectionX(0);
 				break;
 		}
-		mmachine.collide(rmachine,(GameEntity**)rmachine.getPrintableAll(),rmachine.getAmount());
 	}
 }

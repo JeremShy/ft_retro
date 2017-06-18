@@ -6,6 +6,7 @@
 # include "AMovable.class.hpp"
 # include "IMachine.class.hpp"
 # include "GameEntity.class.hpp"
+# include "RenderMachine.class.hpp"
 
 class MotorMachine : public IMachine {
 public:
@@ -15,14 +16,13 @@ public:
 
 	MotorMachine & operator=(MotorMachine const & rhs);
 
-	void	moveAll(void);
-	void	moveAllExcept(AMovable *obj);
+	void	moveAll(RenderMachine &render);
+	void	moveAllExcept(AMovable *obj, RenderMachine &render);
 	void	addMovable(unsigned int id, AMovable *obj);
 	void	addMovable(AMovable *obj);
 	void	removeMovable(unsigned int id);
 	void	removeMovable(AMovable *obj);
 	AMovable	*getMovable(unsigned int _id);
-	void	collide(RenderMachine &rmachine, GameEntity **props, int amount);
 
 	unsigned int	getAmount(void) const;
 
