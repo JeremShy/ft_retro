@@ -7,9 +7,9 @@
 class AMovable {
 public:
 	AMovable(void);
-	AMovable(int x, int y);
+	AMovable(int x, int y, unsigned int health, unsigned int damage);
 	AMovable(AMovable const & src);
-	~AMovable(void);
+	virtual ~AMovable(void);
 
 	AMovable & operator=(AMovable const & rhs);
 	virtual		AMovable *clone() = 0;
@@ -17,6 +17,9 @@ public:
 
 	unsigned int 	getPositionX(void) const;
 	unsigned int 	getPositionY(void) const;
+
+	unsigned int	getHealth(void) const;
+	unsigned int	getDamage(void) const;
 
 	float 			getRealPositionX(void) const;
 	float 			getRealPositionY(void) const;
@@ -31,6 +34,11 @@ public:
 	void			setDirectionX(float);
 	void			setDirectionY(float);
 
+	void			setHealth(unsigned int);
+	void			setDamage(unsigned int);
+
+	virtual void	takeDamage(unsigned int damage) = 0;
+
 
 	//virtual void			takeDamage(unsigned int amount);
 	//virtual unsigned int	getDamage(void) const;
@@ -43,6 +51,8 @@ protected:
 private:
 	float 	_x;
 	float 	_y;
+	unsigned int		_health;
+	unsigned int		_damage;
 
 };
 

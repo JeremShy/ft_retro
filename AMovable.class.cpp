@@ -2,7 +2,7 @@
 #include <unistd.h>
 #include <fstream>
 
-AMovable::AMovable(void) : _x(0), _y(0) {
+AMovable::AMovable(void) : _x(0), _y(0), _health(0), _damage(0) {
 	(this->_direction)[0] = 0;
 	(this->_direction)[1] = 0;
 }
@@ -12,7 +12,7 @@ AMovable::AMovable(AMovable const & src) : _x(src._x), _y(src._y) {
 	(this->_direction)[1] = (src._direction)[1];
 }
 
-AMovable::AMovable(int x, int y) : _x(x), _y(y) {
+AMovable::AMovable(int x, int y, unsigned int health, unsigned int damage) : _x(x), _y(y), _health(health), _damage(damage) {
 	// std::cout << "HERE : " << x << " - " << y << std::endl;
 	(this->_direction)[0] = 0;
 	(this->_direction)[1] = 0;
@@ -94,4 +94,16 @@ bool				AMovable::doesCollide(AMovable *obj){
 		return true;
 	}
 	return false;
+}
+unsigned int 		AMovable::getHealth(void) const{
+	return this->_health;
+}
+unsigned int 		AMovable::getDamage(void) const{
+	return this->_damage;
+}
+void				AMovable::setHealth(unsigned int health){
+	this->_health = health;
+}
+void				AMovable::setDamage(unsigned int damage){
+	this->_damage = damage;
 }
