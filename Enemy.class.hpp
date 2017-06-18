@@ -2,7 +2,6 @@
 # define ENEMY_CLASS_HPP
 
 #include "GameEntity.class.hpp"
-#include "AMovable.class.hpp"
 #include <iostream>
 
 class Enemy : public GameEntity
