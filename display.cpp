@@ -64,7 +64,7 @@ void	print_interface(Hero *hero)
 	}
 	std::stringstream buf;
 	buf << "x : " << hero->getPositionX() << " - y : " << hero->getPositionY();
-	buf << " hp : " << hero->getHealth() << " timer : " << t.get_millis_time();
+	buf << " hp : " << hero->getHealth() << " timer : " << t.getDiffAsMillis() / 100;
 	str = buf.str();
 	for (unsigned int i = 0; i < str.length(); i++)
 	{
