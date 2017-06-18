@@ -155,6 +155,7 @@ void					MotorMachine::describe() {
 			if (props[i] != NULL && props[y] != NULL){
 				if (props[i]->getPositionX() == props[y]->getPositionX() && props[i]->getPositionY() == props[y]->getPositionY()){
 					props[i]->takeDamage(props[y]->getDamage());
+
 					props[y]->takeDamage(props[i]->getDamage());
 					std::cout << "props[i]" << props[i]->getHealth() << " | props[y] " << props[y]->getHealth();
 					sleep(1);
