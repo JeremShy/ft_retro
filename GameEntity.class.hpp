@@ -20,6 +20,7 @@ public:
 	void					erase(void);
 	virtual void			takeDamage(unsigned int);
 	void					move();
+	bool							escapedBoundaries(void);
 	bool					doesCollide(GameEntity *col);
 	// virtual void			move(int input);
 

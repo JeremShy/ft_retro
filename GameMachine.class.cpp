@@ -47,6 +47,12 @@ void	GameMachine::moveAll() {
 	std::fstream log("log", std::fstream::out | std::fstream::app);
 	for (unsigned int i = 0; i < this->getAmount(); i++) {
 		(this->_tab[i])->move();
+		if (this->_tab[i] && (this->_tab[i])->escapedBoundaries()) {
+			GameEntity*	ptr2 = this->_tab[i];
+			log << "Out of bonds : " << ptr2 << std::endl;
+			this->removeGE(this->_tab[i]);
+			delete ptr2;
+		}
 		for (unsigned int y = 0; y < this->getAmount(); y++) {
 			if (y != i && this->_tab[i] != NULL && this->_tab[y] != NULL){
 				if ((this->_tab[i])->doesCollide(this->_tab[y])){
@@ -79,10 +85,16 @@ void	GameMachine::moveAllExcept(GameEntity *obj) {
 	std::fstream log("log", std::fstream::out | std::fstream::app);
 	for (unsigned int i = 0; i < this->getAmount(); i++) {
 		// std::cout << "i : " << i << std::endl;
-		if (this->_tab[i] != obj && this->_tab[i] != NULL){
+		if (this->_tab[i] && (this->_tab[i])->escapedBoundaries()) {
+			GameEntity*	ptr2 = this->_tab[i];
+			log << "Out of bonds : " << ptr2 << std::endl;
+			this->removeGE(this->_tab[i]);
+			delete ptr2;
+		}
+		if (this->_tab[i] != obj && this->_tab[i]){
 			(this->_tab[i])->move();
 			for (unsigned int y = 0; y < this->getAmount(); y++) {
-				if (y != i && this->_tab[i] != NULL && this->_tab[y] != NULL){
+				if (y != i && this->_tab[i] && this->_tab[y]){
 					if ((this->_tab[i])->doesCollide(this->_tab[y])){
 
 						GameEntity* 	ptr = this->_tab[y];

@@ -1,0 +1,1323 @@
+starting program !
+Adding enemy to both machines 0x7fccd3c03340
+Describing printables
+[0] : 0x7fccd3c03310
+Trying to add a Game Entity [0x7fccd3c03340] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3c03340
+-------------------
+Spawning enenmy at 218 - 32 with velocity : -0.16, and with address: 0x7fccd3d00000
+Adding enemy to both machines 0x7fccd3d00000
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3c03340
+Trying to add a Game Entity [0x7fccd3d00000] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3c03340
+[2] : 0x7fccd3d00000
+-------------------
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3c03340
+[2] : 0x7fccd3d00000
+Trying to add a Game Entity [0x7fccd3c05c80] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3c03340
+[2] : 0x7fccd3d00000
+[3] : 0x7fccd3c05c80
+-------------------
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3c03340
+[2] : 0x7fccd3d00000
+[3] : 0x7fccd3c05c80
+Trying to add a Game Entity [0x7fccd3c05cd0] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3c03340
+[2] : 0x7fccd3d00000
+[3] : 0x7fccd3c05c80
+[4] : 0x7fccd3c05cd0
+-------------------
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3c03340
+[2] : 0x7fccd3d00000
+[3] : 0x7fccd3c05c80
+[4] : 0x7fccd3c05cd0
+Trying to add a Game Entity [0x7fccd3e00000] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3c03340
+[2] : 0x7fccd3d00000
+[3] : 0x7fccd3c05c80
+[4] : 0x7fccd3c05cd0
+[5] : 0x7fccd3e00000
+-------------------
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3c03340
+[2] : 0x7fccd3d00000
+[3] : 0x7fccd3c05c80
+[4] : 0x7fccd3c05cd0
+[5] : 0x7fccd3e00000
+Trying to add a Game Entity [0x7fccd3f00000] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3c03340
+[2] : 0x7fccd3d00000
+[3] : 0x7fccd3c05c80
+[4] : 0x7fccd3c05cd0
+[5] : 0x7fccd3e00000
+[6] : 0x7fccd3f00000
+-------------------
+Spawning enenmy at 242 - 37 with velocity : -0.16, and with address: 0x7fccd3d00050
+Adding enemy to both machines 0x7fccd3d00050
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3c03340
+[2] : 0x7fccd3d00000
+[3] : 0x7fccd3c05c80
+[4] : 0x7fccd3c05cd0
+[5] : 0x7fccd3e00000
+[6] : 0x7fccd3f00000
+Trying to add a Game Entity [0x7fccd3d00050] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3c03340
+[2] : 0x7fccd3d00000
+[3] : 0x7fccd3c05c80
+[4] : 0x7fccd3c05cd0
+[5] : 0x7fccd3e00000
+[6] : 0x7fccd3f00000
+[7] : 0x7fccd3d00050
+-------------------
+A collision was detected !
+A GameEntity took 20 damages.
+trying to remove item at 0x7fccd3c03340. (second if)
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3c03340
+[2] : 0x7fccd3d00000
+[3] : 0x7fccd3c05c80
+[4] : 0x7fccd3c05cd0
+[5] : 0x7fccd3e00000
+[6] : 0x7fccd3f00000
+[7] : 0x7fccd3d00050
+Trying to remove Game Entity at 1
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3d00050
+An enemy was killed
+Spawning enenmy at 215 - 10 with velocity : -0.16, and with address: 0x7fccd3e00030
+Adding enemy to both machines 0x7fccd3e00030
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3d00050
+Trying to add a Game Entity [0x7fccd3e00030] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3d00050
+[7] : 0x7fccd3e00030
+-------------------
+Spawning enenmy at 232 - 57 with velocity : -0.15, and with address: 0x7fccd3d00080
+Adding enemy to both machines 0x7fccd3d00080
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3d00050
+[7] : 0x7fccd3e00030
+Trying to add a Game Entity [0x7fccd3d00080] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3d00050
+[7] : 0x7fccd3e00030
+[8] : 0x7fccd3d00080
+-------------------
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3d00050
+[7] : 0x7fccd3e00030
+[8] : 0x7fccd3d00080
+Trying to add a Game Entity [0x7fccd3d00100] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3d00050
+[7] : 0x7fccd3e00030
+[8] : 0x7fccd3d00080
+[9] : 0x7fccd3d00100
+-------------------
+Spawning enenmy at 233 - 45 with velocity : -0.16, and with address: 0x7fccd3e000a0
+Adding enemy to both machines 0x7fccd3e000a0
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3d00050
+[7] : 0x7fccd3e00030
+[8] : 0x7fccd3d00080
+[9] : 0x7fccd3d00100
+Trying to add a Game Entity [0x7fccd3e000a0] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3d00050
+[7] : 0x7fccd3e00030
+[8] : 0x7fccd3d00080
+[9] : 0x7fccd3d00100
+[10] : 0x7fccd3e000a0
+-------------------
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3d00050
+[7] : 0x7fccd3e00030
+[8] : 0x7fccd3d00080
+[9] : 0x7fccd3d00100
+[10] : 0x7fccd3e000a0
+Trying to add a Game Entity [0x7fccd3c03340] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3d00050
+[7] : 0x7fccd3e00030
+[8] : 0x7fccd3d00080
+[9] : 0x7fccd3d00100
+[10] : 0x7fccd3e000a0
+[11] : 0x7fccd3c03340
+-------------------
+A collision was detected !
+A GameEntity took 20 damages.
+trying to remove item at 0x7fccd3d00050. (second if)
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3d00050
+[7] : 0x7fccd3e00030
+[8] : 0x7fccd3d00080
+[9] : 0x7fccd3d00100
+[10] : 0x7fccd3e000a0
+[11] : 0x7fccd3c03340
+Trying to remove Game Entity at 6
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00080
+[8] : 0x7fccd3d00100
+[9] : 0x7fccd3e000a0
+[10] : 0x7fccd3c03340
+An enemy was killed
+Spawning enenmy at 233 - 17 with velocity : -0.14, and with address: 0x7fccd3d00050
+Adding enemy to both machines 0x7fccd3d00050
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00080
+[8] : 0x7fccd3d00100
+[9] : 0x7fccd3e000a0
+[10] : 0x7fccd3c03340
+Trying to add a Game Entity [0x7fccd3d00050] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00080
+[8] : 0x7fccd3d00100
+[9] : 0x7fccd3e000a0
+[10] : 0x7fccd3c03340
+[11] : 0x7fccd3d00050
+-------------------
+Spawning enenmy at 235 - 39 with velocity : -0.16, and with address: 0x7fccd3c05d00
+Adding enemy to both machines 0x7fccd3c05d00
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00080
+[8] : 0x7fccd3d00100
+[9] : 0x7fccd3e000a0
+[10] : 0x7fccd3c03340
+[11] : 0x7fccd3d00050
+Trying to add a Game Entity [0x7fccd3c05d00] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00080
+[8] : 0x7fccd3d00100
+[9] : 0x7fccd3e000a0
+[10] : 0x7fccd3c03340
+[11] : 0x7fccd3d00050
+[12] : 0x7fccd3c05d00
+-------------------
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00080
+[8] : 0x7fccd3d00100
+[9] : 0x7fccd3e000a0
+[10] : 0x7fccd3c03340
+[11] : 0x7fccd3d00050
+[12] : 0x7fccd3c05d00
+Trying to add a Game Entity [0x7fccd3c05d30] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00080
+[8] : 0x7fccd3d00100
+[9] : 0x7fccd3e000a0
+[10] : 0x7fccd3c03340
+[11] : 0x7fccd3d00050
+[12] : 0x7fccd3c05d00
+[13] : 0x7fccd3c05d30
+-------------------
+A collision was detected !
+A GameEntity took 20 damages.
+trying to remove item at 0x7fccd3d00080. (second if)
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00080
+[8] : 0x7fccd3d00100
+[9] : 0x7fccd3e000a0
+[10] : 0x7fccd3c03340
+[11] : 0x7fccd3d00050
+[12] : 0x7fccd3c05d00
+[13] : 0x7fccd3c05d30
+Trying to remove Game Entity at 7
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3e000a0
+[9] : 0x7fccd3c03340
+[10] : 0x7fccd3d00050
+[11] : 0x7fccd3c05d00
+[12] : 0x7fccd3c05d30
+An enemy was killed
+Spawning enenmy at 222 - 43 with velocity : -0.14, and with address: 0x7fccd3e00060
+Adding enemy to both machines 0x7fccd3e00060
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3e000a0
+[9] : 0x7fccd3c03340
+[10] : 0x7fccd3d00050
+[11] : 0x7fccd3c05d00
+[12] : 0x7fccd3c05d30
+Trying to add a Game Entity [0x7fccd3e00060] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3e000a0
+[9] : 0x7fccd3c03340
+[10] : 0x7fccd3d00050
+[11] : 0x7fccd3c05d00
+[12] : 0x7fccd3c05d30
+[13] : 0x7fccd3e00060
+-------------------
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3e000a0
+[9] : 0x7fccd3c03340
+[10] : 0x7fccd3d00050
+[11] : 0x7fccd3c05d00
+[12] : 0x7fccd3c05d30
+[13] : 0x7fccd3e00060
+Trying to add a Game Entity [0x7fccd3c05d60] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3e000a0
+[9] : 0x7fccd3c03340
+[10] : 0x7fccd3d00050
+[11] : 0x7fccd3c05d00
+[12] : 0x7fccd3c05d30
+[13] : 0x7fccd3e00060
+[14] : 0x7fccd3c05d60
+-------------------
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3e000a0
+[9] : 0x7fccd3c03340
+[10] : 0x7fccd3d00050
+[11] : 0x7fccd3c05d00
+[12] : 0x7fccd3c05d30
+[13] : 0x7fccd3e00060
+[14] : 0x7fccd3c05d60
+Trying to add a Game Entity [0x7fccd3d00080] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3e000a0
+[9] : 0x7fccd3c03340
+[10] : 0x7fccd3d00050
+[11] : 0x7fccd3c05d00
+[12] : 0x7fccd3c05d30
+[13] : 0x7fccd3e00060
+[14] : 0x7fccd3c05d60
+[15] : 0x7fccd3d00080
+-------------------
+A collision was detected !
+A GameEntity took 20 damages.
+trying to remove item at 0x7fccd3e000a0. (second if)
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3e000a0
+[9] : 0x7fccd3c03340
+[10] : 0x7fccd3d00050
+[11] : 0x7fccd3c05d00
+[12] : 0x7fccd3c05d30
+[13] : 0x7fccd3e00060
+[14] : 0x7fccd3c05d60
+[15] : 0x7fccd3d00080
+Trying to remove Game Entity at 8
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d00
+[11] : 0x7fccd3c05d30
+[12] : 0x7fccd3e00060
+[13] : 0x7fccd3c05d60
+[14] : 0x7fccd3d00080
+An enemy was killed
+Spawning enenmy at 233 - 65 with velocity : -0.14, and with address: 0x7fccd3d001b0
+Adding enemy to both machines 0x7fccd3d001b0
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d00
+[11] : 0x7fccd3c05d30
+[12] : 0x7fccd3e00060
+[13] : 0x7fccd3c05d60
+[14] : 0x7fccd3d00080
+Trying to add a Game Entity [0x7fccd3d001b0] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d00
+[11] : 0x7fccd3c05d30
+[12] : 0x7fccd3e00060
+[13] : 0x7fccd3c05d60
+[14] : 0x7fccd3d00080
+[15] : 0x7fccd3d001b0
+-------------------
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d00
+[11] : 0x7fccd3c05d30
+[12] : 0x7fccd3e00060
+[13] : 0x7fccd3c05d60
+[14] : 0x7fccd3d00080
+[15] : 0x7fccd3d001b0
+Trying to add a Game Entity [0x7fccd3f00030] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d00
+[11] : 0x7fccd3c05d30
+[12] : 0x7fccd3e00060
+[13] : 0x7fccd3c05d60
+[14] : 0x7fccd3d00080
+[15] : 0x7fccd3d001b0
+[16] : 0x7fccd3f00030
+-------------------
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d00
+[11] : 0x7fccd3c05d30
+[12] : 0x7fccd3e00060
+[13] : 0x7fccd3c05d60
+[14] : 0x7fccd3d00080
+[15] : 0x7fccd3d001b0
+[16] : 0x7fccd3f00030
+Trying to add a Game Entity [0x7fccd3e000a0] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d00
+[11] : 0x7fccd3c05d30
+[12] : 0x7fccd3e00060
+[13] : 0x7fccd3c05d60
+[14] : 0x7fccd3d00080
+[15] : 0x7fccd3d001b0
+[16] : 0x7fccd3f00030
+[17] : 0x7fccd3e000a0
+-------------------
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d00
+[11] : 0x7fccd3c05d30
+[12] : 0x7fccd3e00060
+[13] : 0x7fccd3c05d60
+[14] : 0x7fccd3d00080
+[15] : 0x7fccd3d001b0
+[16] : 0x7fccd3f00030
+[17] : 0x7fccd3e000a0
+Trying to add a Game Entity [0x7fccd3c05d90] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d00
+[11] : 0x7fccd3c05d30
+[12] : 0x7fccd3e00060
+[13] : 0x7fccd3c05d60
+[14] : 0x7fccd3d00080
+[15] : 0x7fccd3d001b0
+[16] : 0x7fccd3f00030
+[17] : 0x7fccd3e000a0
+[18] : 0x7fccd3c05d90
+-------------------
+Spawning enenmy at 229 - 24 with velocity : -0.14, and with address: 0x7fccd3c05ed0
+Adding enemy to both machines 0x7fccd3c05ed0
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d00
+[11] : 0x7fccd3c05d30
+[12] : 0x7fccd3e00060
+[13] : 0x7fccd3c05d60
+[14] : 0x7fccd3d00080
+[15] : 0x7fccd3d001b0
+[16] : 0x7fccd3f00030
+[17] : 0x7fccd3e000a0
+[18] : 0x7fccd3c05d90
+Trying to add a Game Entity [0x7fccd3c05ed0] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d00
+[11] : 0x7fccd3c05d30
+[12] : 0x7fccd3e00060
+[13] : 0x7fccd3c05d60
+[14] : 0x7fccd3d00080
+[15] : 0x7fccd3d001b0
+[16] : 0x7fccd3f00030
+[17] : 0x7fccd3e000a0
+[18] : 0x7fccd3c05d90
+[19] : 0x7fccd3c05ed0
+-------------------
+A collision was detected !
+A GameEntity took 20 damages.
+trying to remove item at 0x7fccd3c05d00. (second if)
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d00
+[11] : 0x7fccd3c05d30
+[12] : 0x7fccd3e00060
+[13] : 0x7fccd3c05d60
+[14] : 0x7fccd3d00080
+[15] : 0x7fccd3d001b0
+[16] : 0x7fccd3f00030
+[17] : 0x7fccd3e000a0
+[18] : 0x7fccd3c05d90
+[19] : 0x7fccd3c05ed0
+Trying to remove Game Entity at 10
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d30
+[11] : 0x7fccd3e00060
+[12] : 0x7fccd3c05d60
+[13] : 0x7fccd3d00080
+[14] : 0x7fccd3d001b0
+[15] : 0x7fccd3f00030
+[16] : 0x7fccd3e000a0
+[17] : 0x7fccd3c05d90
+[18] : 0x7fccd3c05ed0
+An enemy was killed
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d30
+[11] : 0x7fccd3e00060
+[12] : 0x7fccd3c05d60
+[13] : 0x7fccd3d00080
+[14] : 0x7fccd3d001b0
+[15] : 0x7fccd3f00030
+[16] : 0x7fccd3e000a0
+[17] : 0x7fccd3c05d90
+[18] : 0x7fccd3c05ed0
+Trying to add a Game Entity [0x7fccd3f00060] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d30
+[11] : 0x7fccd3e00060
+[12] : 0x7fccd3c05d60
+[13] : 0x7fccd3d00080
+[14] : 0x7fccd3d001b0
+[15] : 0x7fccd3f00030
+[16] : 0x7fccd3e000a0
+[17] : 0x7fccd3c05d90
+[18] : 0x7fccd3c05ed0
+[19] : 0x7fccd3f00060
+-------------------
+Spawning enenmy at 234 - 57 with velocity : -0.15, and with address: 0x7fccd3e00160
+Adding enemy to both machines 0x7fccd3e00160
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d30
+[11] : 0x7fccd3e00060
+[12] : 0x7fccd3c05d60
+[13] : 0x7fccd3d00080
+[14] : 0x7fccd3d001b0
+[15] : 0x7fccd3f00030
+[16] : 0x7fccd3e000a0
+[17] : 0x7fccd3c05d90
+[18] : 0x7fccd3c05ed0
+[19] : 0x7fccd3f00060
+Trying to add a Game Entity [0x7fccd3e00160] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d30
+[11] : 0x7fccd3e00060
+[12] : 0x7fccd3c05d60
+[13] : 0x7fccd3d00080
+[14] : 0x7fccd3d001b0
+[15] : 0x7fccd3f00030
+[16] : 0x7fccd3e000a0
+[17] : 0x7fccd3c05d90
+[18] : 0x7fccd3c05ed0
+[19] : 0x7fccd3f00060
+[20] : 0x7fccd3e00160
+-------------------
+A collision was detected !
+A GameEntity took 20 damages.
+trying to remove item at 0x7fccd3e00060. (second if)
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d30
+[11] : 0x7fccd3e00060
+[12] : 0x7fccd3c05d60
+[13] : 0x7fccd3d00080
+[14] : 0x7fccd3d001b0
+[15] : 0x7fccd3f00030
+[16] : 0x7fccd3e000a0
+[17] : 0x7fccd3c05d90
+[18] : 0x7fccd3c05ed0
+[19] : 0x7fccd3f00060
+[20] : 0x7fccd3e00160
+Trying to remove Game Entity at 11
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d30
+[11] : 0x7fccd3c05d60
+[12] : 0x7fccd3d00080
+[13] : 0x7fccd3d001b0
+[14] : 0x7fccd3f00030
+[15] : 0x7fccd3e000a0
+[16] : 0x7fccd3c05d90
+[17] : 0x7fccd3c05ed0
+[18] : 0x7fccd3f00060
+[19] : 0x7fccd3e00160
+An enemy was killed
+Spawning enenmy at 231 - 33 with velocity : -0.16, and with address: 0x7fccd3e00060
+Adding enemy to both machines 0x7fccd3e00060
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d30
+[11] : 0x7fccd3c05d60
+[12] : 0x7fccd3d00080
+[13] : 0x7fccd3d001b0
+[14] : 0x7fccd3f00030
+[15] : 0x7fccd3e000a0
+[16] : 0x7fccd3c05d90
+[17] : 0x7fccd3c05ed0
+[18] : 0x7fccd3f00060
+[19] : 0x7fccd3e00160
+Trying to add a Game Entity [0x7fccd3e00060] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d30
+[11] : 0x7fccd3c05d60
+[12] : 0x7fccd3d00080
+[13] : 0x7fccd3d001b0
+[14] : 0x7fccd3f00030
+[15] : 0x7fccd3e000a0
+[16] : 0x7fccd3c05d90
+[17] : 0x7fccd3c05ed0
+[18] : 0x7fccd3f00060
+[19] : 0x7fccd3e00160
+[20] : 0x7fccd3e00060
+-------------------
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d30
+[11] : 0x7fccd3c05d60
+[12] : 0x7fccd3d00080
+[13] : 0x7fccd3d001b0
+[14] : 0x7fccd3f00030
+[15] : 0x7fccd3e000a0
+[16] : 0x7fccd3c05d90
+[17] : 0x7fccd3c05ed0
+[18] : 0x7fccd3f00060
+[19] : 0x7fccd3e00160
+[20] : 0x7fccd3e00060
+Trying to add a Game Entity [0x7fccd3e000d0] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d30
+[11] : 0x7fccd3c05d60
+[12] : 0x7fccd3d00080
+[13] : 0x7fccd3d001b0
+[14] : 0x7fccd3f00030
+[15] : 0x7fccd3e000a0
+[16] : 0x7fccd3c05d90
+[17] : 0x7fccd3c05ed0
+[18] : 0x7fccd3f00060
+[19] : 0x7fccd3e00160
+[20] : 0x7fccd3e00060
+[21] : 0x7fccd3e000d0
+-------------------
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d30
+[11] : 0x7fccd3c05d60
+[12] : 0x7fccd3d00080
+[13] : 0x7fccd3d001b0
+[14] : 0x7fccd3f00030
+[15] : 0x7fccd3e000a0
+[16] : 0x7fccd3c05d90
+[17] : 0x7fccd3c05ed0
+[18] : 0x7fccd3f00060
+[19] : 0x7fccd3e00160
+[20] : 0x7fccd3e00060
+[21] : 0x7fccd3e000d0
+Trying to add a Game Entity [0x7fccd3e00100] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d30
+[11] : 0x7fccd3c05d60
+[12] : 0x7fccd3d00080
+[13] : 0x7fccd3d001b0
+[14] : 0x7fccd3f00030
+[15] : 0x7fccd3e000a0
+[16] : 0x7fccd3c05d90
+[17] : 0x7fccd3c05ed0
+[18] : 0x7fccd3f00060
+[19] : 0x7fccd3e00160
+[20] : 0x7fccd3e00060
+[21] : 0x7fccd3e000d0
+[22] : 0x7fccd3e00100
+-------------------
+A collision was detected !
+A GameEntity took 20 damages.
+trying to remove item at 0x7fccd3d001b0. (second if)
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d30
+[11] : 0x7fccd3c05d60
+[12] : 0x7fccd3d00080
+[13] : 0x7fccd3d001b0
+[14] : 0x7fccd3f00030
+[15] : 0x7fccd3e000a0
+[16] : 0x7fccd3c05d90
+[17] : 0x7fccd3c05ed0
+[18] : 0x7fccd3f00060
+[19] : 0x7fccd3e00160
+[20] : 0x7fccd3e00060
+[21] : 0x7fccd3e000d0
+[22] : 0x7fccd3e00100
+Trying to remove Game Entity at 13
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d30
+[11] : 0x7fccd3c05d60
+[12] : 0x7fccd3d00080
+[13] : 0x7fccd3f00030
+[14] : 0x7fccd3e000a0
+[15] : 0x7fccd3c05d90
+[16] : 0x7fccd3c05ed0
+[17] : 0x7fccd3f00060
+[18] : 0x7fccd3e00160
+[19] : 0x7fccd3e00060
+[20] : 0x7fccd3e000d0
+[21] : 0x7fccd3e00100
+An enemy was killed
+Spawning enenmy at 214 - 52 with velocity : -0.16, and with address: 0x7fccd3d001b0
+Adding enemy to both machines 0x7fccd3d001b0
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d30
+[11] : 0x7fccd3c05d60
+[12] : 0x7fccd3d00080
+[13] : 0x7fccd3f00030
+[14] : 0x7fccd3e000a0
+[15] : 0x7fccd3c05d90
+[16] : 0x7fccd3c05ed0
+[17] : 0x7fccd3f00060
+[18] : 0x7fccd3e00160
+[19] : 0x7fccd3e00060
+[20] : 0x7fccd3e000d0
+[21] : 0x7fccd3e00100
+Trying to add a Game Entity [0x7fccd3d001b0] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d30
+[11] : 0x7fccd3c05d60
+[12] : 0x7fccd3d00080
+[13] : 0x7fccd3f00030
+[14] : 0x7fccd3e000a0
+[15] : 0x7fccd3c05d90
+[16] : 0x7fccd3c05ed0
+[17] : 0x7fccd3f00060
+[18] : 0x7fccd3e00160
+[19] : 0x7fccd3e00060
+[20] : 0x7fccd3e000d0
+[21] : 0x7fccd3e00100
+[22] : 0x7fccd3d001b0
+-------------------
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d30
+[11] : 0x7fccd3c05d60
+[12] : 0x7fccd3d00080
+[13] : 0x7fccd3f00030
+[14] : 0x7fccd3e000a0
+[15] : 0x7fccd3c05d90
+[16] : 0x7fccd3c05ed0
+[17] : 0x7fccd3f00060
+[18] : 0x7fccd3e00160
+[19] : 0x7fccd3e00060
+[20] : 0x7fccd3e000d0
+[21] : 0x7fccd3e00100
+[22] : 0x7fccd3d001b0
+Trying to add a Game Entity [0x7fccd3d000b0] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d30
+[11] : 0x7fccd3c05d60
+[12] : 0x7fccd3d00080
+[13] : 0x7fccd3f00030
+[14] : 0x7fccd3e000a0
+[15] : 0x7fccd3c05d90
+[16] : 0x7fccd3c05ed0
+[17] : 0x7fccd3f00060
+[18] : 0x7fccd3e00160
+[19] : 0x7fccd3e00060
+[20] : 0x7fccd3e000d0
+[21] : 0x7fccd3e00100
+[22] : 0x7fccd3d001b0
+[23] : 0x7fccd3d000b0
+-------------------
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d30
+[11] : 0x7fccd3c05d60
+[12] : 0x7fccd3d00080
+[13] : 0x7fccd3f00030
+[14] : 0x7fccd3e000a0
+[15] : 0x7fccd3c05d90
+[16] : 0x7fccd3c05ed0
+[17] : 0x7fccd3f00060
+[18] : 0x7fccd3e00160
+[19] : 0x7fccd3e00060
+[20] : 0x7fccd3e000d0
+[21] : 0x7fccd3e00100
+[22] : 0x7fccd3d001b0
+[23] : 0x7fccd3d000b0
+Trying to add a Game Entity [0x7fccd3c05d00] at the end of the pile
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d30
+[11] : 0x7fccd3c05d60
+[12] : 0x7fccd3d00080
+[13] : 0x7fccd3f00030
+[14] : 0x7fccd3e000a0
+[15] : 0x7fccd3c05d90
+[16] : 0x7fccd3c05ed0
+[17] : 0x7fccd3f00060
+[18] : 0x7fccd3e00160
+[19] : 0x7fccd3e00060
+[20] : 0x7fccd3e000d0
+[21] : 0x7fccd3e00100
+[22] : 0x7fccd3d001b0
+[23] : 0x7fccd3d000b0
+[24] : 0x7fccd3c05d00
+-------------------
+A collision was detected !
+A GameEntity took 20 damages.
+trying to remove item at 0x7fccd3e00160. (second if)
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d30
+[11] : 0x7fccd3c05d60
+[12] : 0x7fccd3d00080
+[13] : 0x7fccd3f00030
+[14] : 0x7fccd3e000a0
+[15] : 0x7fccd3c05d90
+[16] : 0x7fccd3c05ed0
+[17] : 0x7fccd3f00060
+[18] : 0x7fccd3e00160
+[19] : 0x7fccd3e00060
+[20] : 0x7fccd3e000d0
+[21] : 0x7fccd3e00100
+[22] : 0x7fccd3d001b0
+[23] : 0x7fccd3d000b0
+[24] : 0x7fccd3c05d00
+Trying to remove Game Entity at 18
+Describing printables
+[0] : 0x7fccd3c03310
+[1] : 0x7fccd3d00000
+[2] : 0x7fccd3c05c80
+[3] : 0x7fccd3c05cd0
+[4] : 0x7fccd3e00000
+[5] : 0x7fccd3f00000
+[6] : 0x7fccd3e00030
+[7] : 0x7fccd3d00100
+[8] : 0x7fccd3c03340
+[9] : 0x7fccd3d00050
+[10] : 0x7fccd3c05d30
+[11] : 0x7fccd3c05d60
+[12] : 0x7fccd3d00080
+[13] : 0x7fccd3f00030
+[14] : 0x7fccd3e000a0
+[15] : 0x7fccd3c05d90
+[16] : 0x7fccd3c05ed0
+[17] : 0x7fccd3f00060
+[18] : 0x7fccd3e00060
+[19] : 0x7fccd3e000d0
+[20] : 0x7fccd3e00100
+[21] : 0x7fccd3d001b0
+[22] : 0x7fccd3d000b0
+[23] : 0x7fccd3c05d00
+An enemy was killed

@@ -1,6 +1,8 @@
 #include "GameEntity.class.hpp"
 #include "display.hpp"
 #include <fstream>
+#include <sys/ioctl.h>
+#include <iostream>
 
 GameEntity::GameEntity(char model, unsigned int x = 0, unsigned int y = 0, unsigned int health = 0, unsigned int damage = 0) : _x(x), _y(y), _health(health), _damage(damage) , _model(model){
 	this->_direction[0] = 0;
@@ -40,6 +42,20 @@ void				GameEntity::move(void) {
 	this->_y += this->_direction[1];
 }
 
+bool				GameEntity::escapedBoundaries(void) {
+	struct winsize size;
+	std::fstream log("log", std::fstream::out | std::fstream::app);
+	if (ioctl(0, TIOCGWINSZ, (char *) &size) < 0)
+	{
+		close_ncurse();
+		std::cout << "error with ioctl" << std::endl;
+		exit(EXIT_FAILURE);
+	}
+	if (this->_y > size.ws_row || this->_y < 0 || this->_x > size.ws_col || this->_x < 0)
+		return (true);
+	log.close();
+	return (false);
+}
 
 void					GameEntity::takeDamage(unsigned int amount) {
 	//Maybe decrement with the armor of the GE.
