@@ -1,86 +1,20 @@
-==18582== Memcheck, a memory error detector
-==18582== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
-==18582== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info
-==18582== Command: ./ft_retro
-==18582== 
-==18582== Invalid read of size 8
-==18582==    at 0x100008F1C: RenderMachine::renderAll() (RenderMachine.class.cpp:35)
-==18582==    by 0x10000A6DB: main (main.cpp:106)
-==18582==  Address 0x100aea170 is 0 bytes inside a block of size 48 free'd
-==18582==    at 0x100024AB5: free (in /Users/jcamhi/.brew/Cellar/valgrind/3.12.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==18582==    by 0x100006598: EnemyB::~EnemyB() (EnemyB.class.cpp:11)
-==18582==    by 0x1000065D8: non-virtual thunk to EnemyB::~EnemyB() (EnemyB.class.cpp:11)
-==18582==    by 0x10000C97F: MotorMachine::moveAllExcept(AMovable*, RenderMachine&) (MotorMachine.class.cpp:81)
-==18582==    by 0x10000A69D: main (main.cpp:100)
-==18582==  Block was alloc'd at
-==18582==    at 0x100024671: malloc (in /Users/jcamhi/.brew/Cellar/valgrind/3.12.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==18582==    by 0x1000AB7DD: operator new(unsigned long) (in /usr/lib/libc++.1.dylib)
-==18582==    by 0x100006B29: spawnRand() (EnemyEvents.cpp:18)
-==18582==    by 0x100009ED9: main (main.cpp:69)
-==18582== 
-==18582== Invalid read of size 4
-==18582==    at 0x10000ADE8: AMovable::getPositionY() const (AMovable.class.cpp:79)
-==18582==    by 0x100007A80: GameEntity::display() (GameEntity.class.cpp:59)
-==18582==    by 0x100008F24: RenderMachine::renderAll() (RenderMachine.class.cpp:35)
-==18582==    by 0x10000A6DB: main (main.cpp:106)
-==18582==  Address 0x100aea18c is 28 bytes inside a block of size 48 free'd
-==18582==    at 0x100024AB5: free (in /Users/jcamhi/.brew/Cellar/valgrind/3.12.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==18582==    by 0x100006598: EnemyB::~EnemyB() (EnemyB.class.cpp:11)
-==18582==    by 0x1000065D8: non-virtual thunk to EnemyB::~EnemyB() (EnemyB.class.cpp:11)
-==18582==    by 0x10000C97F: MotorMachine::moveAllExcept(AMovable*, RenderMachine&) (MotorMachine.class.cpp:81)
-==18582==    by 0x10000A69D: main (main.cpp:100)
-==18582==  Block was alloc'd at
-==18582==    at 0x100024671: malloc (in /Users/jcamhi/.brew/Cellar/valgrind/3.12.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==18582==    by 0x1000AB7DD: operator new(unsigned long) (in /usr/lib/libc++.1.dylib)
-==18582==    by 0x100006B29: spawnRand() (EnemyEvents.cpp:18)
-==18582==    by 0x100009ED9: main (main.cpp:69)
-==18582== 
-==18582== Invalid read of size 4
-==18582==    at 0x10000ADC8: AMovable::getPositionX() const (AMovable.class.cpp:75)
-==18582==    by 0x100007A93: GameEntity::display() (GameEntity.class.cpp:59)
-==18582==    by 0x100008F24: RenderMachine::renderAll() (RenderMachine.class.cpp:35)
-==18582==    by 0x10000A6DB: main (main.cpp:106)
-==18582==  Address 0x100aea188 is 24 bytes inside a block of size 48 free'd
-==18582==    at 0x100024AB5: free (in /Users/jcamhi/.brew/Cellar/valgrind/3.12.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==18582==    by 0x100006598: EnemyB::~EnemyB() (EnemyB.class.cpp:11)
-==18582==    by 0x1000065D8: non-virtual thunk to EnemyB::~EnemyB() (EnemyB.class.cpp:11)
-==18582==    by 0x10000C97F: MotorMachine::moveAllExcept(AMovable*, RenderMachine&) (MotorMachine.class.cpp:81)
-==18582==    by 0x10000A69D: main (main.cpp:100)
-==18582==  Block was alloc'd at
-==18582==    at 0x100024671: malloc (in /Users/jcamhi/.brew/Cellar/valgrind/3.12.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==18582==    by 0x1000AB7DD: operator new(unsigned long) (in /usr/lib/libc++.1.dylib)
-==18582==    by 0x100006B29: spawnRand() (EnemyEvents.cpp:18)
-==18582==    by 0x100009ED9: main (main.cpp:69)
-==18582== 
-==18582== Invalid read of size 1
-==18582==    at 0x1000070CC: GameEntity::getModel() const (GameEntity.class.cpp:48)
-==18582==    by 0x100007AC9: GameEntity::display() (GameEntity.class.cpp:59)
-==18582==    by 0x100008F24: RenderMachine::renderAll() (RenderMachine.class.cpp:35)
-==18582==    by 0x10000A6DB: main (main.cpp:106)
-==18582==  Address 0x100aea198 is 40 bytes inside a block of size 48 free'd
-==18582==    at 0x100024AB5: free (in /Users/jcamhi/.brew/Cellar/valgrind/3.12.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==18582==    by 0x100006598: EnemyB::~EnemyB() (EnemyB.class.cpp:11)
-==18582==    by 0x1000065D8: non-virtual thunk to EnemyB::~EnemyB() (EnemyB.class.cpp:11)
-==18582==    by 0x10000C97F: MotorMachine::moveAllExcept(AMovable*, RenderMachine&) (MotorMachine.class.cpp:81)
-==18582==    by 0x10000A69D: main (main.cpp:100)
-==18582==  Block was alloc'd at
-==18582==    at 0x100024671: malloc (in /Users/jcamhi/.brew/Cellar/valgrind/3.12.0/lib/valgrind/vgpreload_memcheck-amd64-darwin.so)
-==18582==    by 0x1000AB7DD: operator new(unsigned long) (in /usr/lib/libc++.1.dylib)
-==18582==    by 0x100006B29: spawnRand() (EnemyEvents.cpp:18)
-==18582==    by 0x100009ED9: main (main.cpp:69)
-==18582== 
-==18582== 
-==18582== HEAP SUMMARY:
-==18582==     in use at exit: 1,374,458 bytes in 737 blocks
-==18582==   total heap usage: 1,640 allocs, 903 frees, 4,285,794 bytes allocated
-==18582== 
-==18582== LEAK SUMMARY:
-==18582==    definitely lost: 3,072 bytes in 64 blocks
-==18582==    indirectly lost: 0 bytes in 0 blocks
-==18582==      possibly lost: 0 bytes in 0 blocks
-==18582==    still reachable: 1,348,972 bytes in 483 blocks
-==18582==         suppressed: 22,414 bytes in 190 blocks
-==18582== Rerun with --leak-check=full to see details of leaked memory
-==18582== 
-==18582== For counts of detected and suppressed errors, rerun with: -v
-==18582== ERROR SUMMARY: 232 errors from 4 contexts (suppressed: 0 from 0)
+==38231== Memcheck, a memory error detector
+==38231== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==38231== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info
+==38231== Command: ./ft_retro
+==38231== 
+==38231== 
+==38231== HEAP SUMMARY:
+==38231==     in use at exit: 1,375,666 bytes in 765 blocks
+==38231==   total heap usage: 4,175 allocs, 3,410 frees, 14,732,050 bytes allocated
+==38231== 
+==38231== LEAK SUMMARY:
+==38231==    definitely lost: 4,176 bytes in 87 blocks
+==38231==    indirectly lost: 0 bytes in 0 blocks
+==38231==      possibly lost: 0 bytes in 0 blocks
+==38231==    still reachable: 1,348,972 bytes in 483 blocks
+==38231==         suppressed: 22,518 bytes in 195 blocks
+==38231== Rerun with --leak-check=full to see details of leaked memory
+==38231== 
+==38231== For counts of detected and suppressed errors, rerun with: -v
+==38231== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

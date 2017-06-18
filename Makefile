@@ -12,7 +12,8 @@ SRC_NAME =	Enemy.class.cpp \
 						AMovable.class.cpp \
 						MotorMachine.class.cpp \
 						IMachine.class.cpp \
-						Timer.class.cpp
+						Timer.class.cpp \
+						GameMachine.class.cpp
 
 
 INC_PATH = ./

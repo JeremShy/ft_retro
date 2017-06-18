@@ -74,17 +74,25 @@ void	RenderMachine::addPrintable(unsigned int idx, IPrintable *obj) { // TO DO :
 }
 
 void	RenderMachine::addPrintable(IPrintable *obj) {
+	std::fstream log("log", std::fstream::out | std::fstream::app);
+	this->describe();
+	log << "Trying to add a printable [" << obj << "] at the end of the pile" << std::endl;
+
 	this->addPrintable(this->_amount, obj);
+	this->describe();
+	log << "-------------------" << std::endl;
+	log.close();
 }
 
 void	RenderMachine::removePrintable(unsigned int idx) {
 	std::fstream log("log", std::fstream::out | std::fstream::app);
+	this->describe();
+	log << "Trying to remove printable at " << idx << std::endl;
 	if (idx >= this->_amount) {
 		log << "There was an error while trying to REMOVE a printable on the RenderMachine at position " << idx << ". There is only " << this->_amount << " printables in the table." << std::endl;
 		log.close();
 		return ;
 	}
-	log << "Removing a printable !" << std::endl;
 
 	IPrintable		**new_tab = new IPrintable*[this->_amount - 1];
 	unsigned int	i;
@@ -103,6 +111,7 @@ void	RenderMachine::removePrintable(unsigned int idx) {
 	this->_tab = new_tab;
 	this->_amount--;
 	log.close();
+	this->describe();
 }
 
 void	RenderMachine::removePrintable(IPrintable *obj) {
@@ -122,7 +131,7 @@ void	RenderMachine::removePrintable(AMovable *obj) {
 			return ;
 		}
 	}
-	std::cout << "There was an error while trying to REMOVE a Movable in RenderMachine." << std::endl;
+	std::cout << "There was an error while trying to REMOVE a Printable in RenderMachine." << std::endl;
 }
 
 IPrintable	*RenderMachine::getPrintable(unsigned int idx) {
@@ -142,7 +151,10 @@ unsigned int	RenderMachine::getAmount(void) const {
 }
 
 void					RenderMachine::describe() {
+	std::fstream log("log", std::fstream::out | std::fstream::app);
+	log << "Describing printables" << std::endl;
 	for (unsigned int i = 0; i < this->_amount; i++) {
-		std::cout << "[" << i << "] : " << this->_tab[i] << std::endl;
+		log << "[" << i << "] : " << this->_tab[i] << std::endl;
 	}
+	log.close();
 }
