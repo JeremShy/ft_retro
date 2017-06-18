@@ -1,6 +1,6 @@
 #include "Hero.class.hpp"
 
-Hero::Hero(void) : GameEntity('H', 0, 0, 100, 20){
+Hero::Hero(void) : GameEntity('H', 0, 0, 1, 20){
 	return;
 }
 
