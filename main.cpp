@@ -92,7 +92,7 @@ int main() {
 			rmachine.addPrintable(x);
 			mmachine.addMovable(x);
 		}
-		if(t2.getDiffAsMillis() >= 1000 / 5) {
+		if(t2.getDiffAsMillis() >= 1000 / 20) {
 			t2.restart();
 			mmachine.moveAllExcept(hero);
 		}
@@ -111,19 +111,19 @@ int main() {
 				break;
 			case KEY_UP:
 				hero->setDirectionX(0);
-				hero->setDirectionY(-0.5);
+				hero->setDirectionY(-1);
 				break;
 			case KEY_DOWN:
 				hero->setDirectionX(0);
-				hero->setDirectionY(0.5);
+				hero->setDirectionY(1);
 				break;
 			case KEY_LEFT:
 				hero->setDirectionY(0);
-				hero->setDirectionX(-0.5);
+				hero->setDirectionX(-1);
 				break;
 			case KEY_RIGHT:
 				hero->setDirectionY(0);
-				hero->setDirectionX(0.5);
+				hero->setDirectionX(1);
 				break;
 			case ' ':
 				bul = hero->shoot(); // <---- Ce serait une bonne chose de renommer "attack()" en "shoot()" pour plus de clarté, je trouve. Mais flemme.

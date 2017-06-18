@@ -1,6 +1,7 @@
 #include "EnemyEvents.hpp"
 #include <sys/ioctl.h>
 #include <fstream>
+#include "display.hpp"
 
 int				enemiesPerLevel[5] = {10, 25, 60, 80, 100};
 
@@ -18,6 +19,7 @@ Enemy*			spawnRand(void){
 	struct winsize size;
 	if (ioctl(0, TIOCGWINSZ, (char *) &size) < 0)
 	{
+		close_ncurse();
 		std::cout << "error with ioctl" << std::endl;
 		exit(EXIT_FAILURE);
 	}
@@ -26,7 +28,7 @@ Enemy*			spawnRand(void){
 	log << "Spawning enenmy at "<< x << " - " << y << std::endl;
 	ret->setPositionX(x);
 	ret->setPositionY(y);
-	ret->setDirectionX(-1 * ((rand() % 4) + 1));
+	ret->setDirectionX(-1.0 * (((rand() % 4) + 1)) / 4);
 	return (ret);
 }
 
