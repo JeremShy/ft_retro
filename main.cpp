@@ -130,13 +130,13 @@ int main() {
 				hero.setDirectionX(0.5);
 				break;
 			case ' ':
-				hero.attack(); // <---- Ce serait une bonne chose de renommer "attack()" en "shoot()" pour plus de clarté, je trouve. Mais flemme.
+				rmachine.addPrintable(hero.attack()); // <---- Ce serait une bonne chose de renommer "attack()" en "shoot()" pour plus de clarté, je trouve. Mais flemme.
 				break;
 			default:
 				hero.setDirectionY(0);
 				hero.setDirectionX(0);
 				break;
 		}
-		hero.colide(rmachine.getAmount(),(GameEntity**)rmachine.getPrintableAll());
+		mmachine.collide(rmachine,(GameEntity**)rmachine.getPrintableAll(),rmachine.getAmount());
 	}
 }

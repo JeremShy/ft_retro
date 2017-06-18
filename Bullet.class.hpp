@@ -12,7 +12,6 @@ public:
 	Bullet &		operator=(Bullet const & rhs);
 
 	virtual Bullet *clone(void);
-	virtual void	attack(void);
 	virtual void	takeDamage(unsigned int);
 
 	~Bullet();

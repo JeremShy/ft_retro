@@ -1,5 +1,6 @@
 #include "MotorMachine.class.hpp"
 #include <iostream>
+#include <unistd.h>
 
 MotorMachine::MotorMachine(void) : _tab(NULL), _amount(0){
 }
@@ -130,5 +131,32 @@ unsigned int	MotorMachine::getAmount(void) const {
 void					MotorMachine::describe() {
 	for (unsigned int i = 0; i < this->_amount; i++) {
 		std::cout << "[" << i << "] : " << this->_tab[i] << std::endl;
+	}
+}
+
+void					MotorMachine::collide(RenderMachine &rmachine, GameEntity** props, int amount){
+	for (int i = 0; i < amount; i++){
+		for (int y = i + 1; y < amount; y++){
+			if (props[i] != NULL && props[y] != NULL){
+				if (props[i]->getPositionX() == props[y]->getPositionX() && props[i]->getPositionY() == props[y]->getPositionY()){
+					props[i]->takeDamage(props[y]->getDamage());
+					props[y]->takeDamage(props[i]->getDamage());
+					std::cout << "props[i]" << props[i]->getHealth() << " | props[y] " << props[y]->getHealth();
+					sleep(1);
+					if (props[i]->getHealth() == 0){
+						this->removeMovable(props[i]);
+						rmachine.removePrintable(props[i]);
+						delete props[i];
+						props[i] = NULL;
+					}
+					if (props[y]->getHealth() == 0){
+						this->removeMovable(props[y]);
+						rmachine.removePrintable(props[y]);
+						delete props[y];
+						props[y] = NULL;
+					}
+				}
+			}
+		}
 	}
 }

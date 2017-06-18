@@ -27,8 +27,6 @@ Bullet::~Bullet(void){
 	return;
 }
 
-void				Bullet::attack(void){};
-
 void				Bullet::takeDamage(unsigned int damage){
 	this->setHealth(this->getHealth() - damage);
 }

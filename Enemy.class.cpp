@@ -30,10 +30,6 @@ Enemy *			Enemy::clone(void){
 	return new Enemy(*this);
 }
 
-void			Enemy::attack(void){
-	// Do enemies attack ?
-}
-
 void			Enemy::takeDamage(unsigned int damage){
 	this->setHealth(this->getDamage() - damage);
 	if (this->getHealth() == 0){

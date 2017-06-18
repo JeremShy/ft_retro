@@ -5,6 +5,7 @@
 # include <iostream>
 # include "AMovable.class.hpp"
 # include "IMachine.class.hpp"
+# include "GameEntity.class.hpp"
 
 class MotorMachine : public IMachine {
 public:
@@ -21,6 +22,7 @@ public:
 	void	removeMovable(unsigned int id);
 	void	removeMovable(AMovable *obj);
 	AMovable	*getMovable(unsigned int _id);
+	void	collide(RenderMachine &rmachine, GameEntity **props, int amount);
 
 	unsigned int	getAmount(void) const;
 

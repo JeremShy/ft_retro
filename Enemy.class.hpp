@@ -15,7 +15,6 @@ public:
 
 	Enemy *			clone(void);
 
-	virtual void	attack(void);
 	virtual void	takeDamage(unsigned int damage);
 
 	~Enemy();
