@@ -6,9 +6,8 @@ SRC_NAME =	Bullet.class.cpp \
 				GameEntity.class.cpp \
 				Hero.class.cpp \
 				Timer.class.cpp \
-				display.cpp
-				# main.cpp
-
+				display.cpp \
+				main.cpp
 
 
 INC_PATH = ./

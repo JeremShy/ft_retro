@@ -57,8 +57,7 @@
 
 int main() {
 
-	RenderMachine rmachine;
-	MotorMachine	mmachine;
+	GameMachine		machine;
 	Hero *hero = new Hero();
 	Enemy *enemy = spawnRand();
 	// Enemy *enemy2 = new EnemyB();
@@ -66,18 +65,18 @@ int main() {
 									exactement la même chose que la méthode start(), mais je trouvais start plus claire. Ici, on crée un timer par intervalle de temps qu'on souhaite tester. */
 	int ch ;
 
-	rmachine.addPrintable(hero);
-	mmachine.addMovable(hero);
+	machine.addGE(hero);
 
-	rmachine.addPrintable(enemy);
-	mmachine.addMovable(enemy);
+	std::fstream loga("log", std::fstream::out | std::fstream::trunc);
+	loga.close();
+	std::fstream log("log", std::fstream::out | std::fstream::app);
+	log << "starting program !" << std::endl;
+	log << "Adding enemy to both machines " << enemy << std::endl;
+	machine.addGE(enemy);
 
 	init_ncurse();
 	t1.start();
 	t2.start();
-	std::fstream log("log", std::fstream::out | std::fstream::trunc);
-	log << "starting program !" << std::endl;
-	log.close();
 	while (1) {
 		/*
 			Il suffit de créer des timers comme suit pour les evenements arrivant toutes les quelques secondes. ici par exemple, tous les ennemis vont bouger 5 fois par secondes, et un nouvel ennemi popera toutes les trois secondes.
@@ -85,19 +84,19 @@ int main() {
 		*/
 		if(t1.getDiffAsMillis() >= 1500) {
 			t1.restart();
-			Enemy *x = spawnRand();
-			rmachine.addPrintable(x);
-			mmachine.addMovable(x);
+			enemy = spawnRand();
+			log << "Adding enemy to both machines " << enemy << std::endl;
+			machine.addGE(enemy);
 		}
 		if(t2.getDiffAsMillis() >= 1000 / 200) {
 			t2.restart();
-			mmachine.moveAllExcept(hero, rmachine);
+			machine.moveAllExcept(hero);
 		}
 		Bullet *bul;
 		clear();
 		// mmachine.moveAll();
 		hero->move();
-		rmachine.renderAll();
+		machine.renderAll();
 		refresh();
 		timeout(0); //Permet de rendre l'appel à getch() non bloquant.
 		ch = getch();
@@ -123,9 +122,8 @@ int main() {
 				hero->setDirectionX(1);
 				break;
 			case ' ':
-				bul = hero->shoot(); // <---- Ce serait une bonne chose de renommer "attack()" en "shoot()" pour plus de clarté, je trouve. Mais flemme.
-				rmachine.addPrintable(bul);
-				mmachine.addMovable(bul);
+				bul = hero->shoot();
+				machine.addGE(bul);
 				break;
 			default:
 				hero->setDirectionY(0);

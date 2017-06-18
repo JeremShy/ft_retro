@@ -30,7 +30,7 @@ Enemy*			spawnRand(void){
 	double velocity = ((rand() % 3) + 14) / 100.0;
 	velocity *= -1.0;
 	// double velocity = -.15;
-	log << "Spawning enenmy at "<< x << " - " << y << " with velocity : " << velocity << std::endl;
+	log << "Spawning enenmy at "<< x << " - " << y << " with velocity : " << velocity << ", and with address: " << ret << std::endl;
 	ret->setDirectionX(velocity);
 	return (ret);
 }
