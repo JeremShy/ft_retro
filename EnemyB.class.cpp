@@ -1,6 +1,6 @@
 #include "EnemyB.class.hpp"
 
-EnemyB::EnemyB(void) : Enemy('B', 30, 1){
+EnemyB::EnemyB(void) : Enemy('I', 30, 1){
 	return;
 }
 

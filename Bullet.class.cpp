@@ -32,5 +32,9 @@ Bullet::~Bullet(void){
 }
 
 void				Bullet::takeDamage(unsigned int damage){
-	this->setHealth(this->getHealth() - damage);
+	if (this->_health - damage > 0){
+		this->_health -= damage;
+	} else {
+		this->_health = 0;
+	}
 }

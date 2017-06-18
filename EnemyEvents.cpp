@@ -23,6 +23,7 @@ Enemy*			spawnRand(void){
 		std::cout << "error with ioctl" << std::endl;
 		exit(EXIT_FAILURE);
 	}
+	// int	y = rand() % size.ws_row;
 	int	y = rand() % size.ws_row;
 	int x = size.ws_col - rand() % 30;
 	ret->setPositionX(x);

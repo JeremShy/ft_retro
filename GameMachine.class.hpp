@@ -19,21 +19,16 @@ public:
 	void	moveAll();
 	void	moveAllExcept(GameEntity *obj);
 
-	void	addGE(unsigned int id, GameEntity *obj);
 	void	addGE(GameEntity *obj);
-	void	removeGE(unsigned int id);
 	void	removeGE(GameEntity *obj);
-
-	GameEntity	*getGE(unsigned int _id);
-	GameEntity  **getGEAll(void);
 
 	unsigned int	getAmount(void) const;
 
 	void	describe(void);
 
 private:
-	GameEntity		**_tab;
-	unsigned int	_amount;
+	GameEntity		*_tab[5000];
+	// unsigned int	_amount;
 };
 
 #endif

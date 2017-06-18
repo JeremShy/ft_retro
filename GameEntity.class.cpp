@@ -52,7 +52,10 @@ bool				GameEntity::escapedBoundaries(void) {
 		exit(EXIT_FAILURE);
 	}
 	if (this->_y > size.ws_row - 1 || this->_y < 0 || this->_x > size.ws_col - 1 || this->_x < 0)
+	{	
+		log << "OUT OF BOUND DETECTED : X " << _x << " - Y : " << _y << " ws_col : " << size.ws_col << " ws_row " << size.ws_row << std::endl; 	
 		return (true);
+	}
 	log.close();
 	return (false);
 }

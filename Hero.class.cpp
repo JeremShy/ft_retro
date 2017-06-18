@@ -3,8 +3,9 @@
 #include <cstdlib>
 #include <iostream>
 #include <sys/ioctl.h>
+#include <fstream>
 
-Hero::Hero(void) : GameEntity('H', 0, 0, 1, 20){
+Hero::Hero(void) : GameEntity('H', 3, 20, 1, 20){
 	return;
 }
 
@@ -14,6 +15,8 @@ Hero::Hero(Hero const & cpy) : GameEntity(cpy.getModel(), cpy.getRealPositionX()
 }
 
 Hero::~Hero(void){
+	std::fstream log("log", std::fstream::out | std::fstream::app);
+	log << "POUET POUET POUET POUET POUET POUET" << std::endl;
 	return;
 }
 
@@ -31,12 +34,6 @@ Hero &			Hero::operator=(Hero const & rhs){
 Hero *			Hero::clone(void){
 	return new Hero(*this);
 }
-
-// Bullet*		Hero::attack(void){
-// 	Bullet*		bullet = new Bullet('-', this->getRealPositionX() + 1, this->getRealPositionY(), 1, this->getDamage());
-// 	return bullet;
-// }
-//
 
 void Hero::attack(void) {
 
