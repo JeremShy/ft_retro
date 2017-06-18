@@ -137,5 +137,6 @@ int main() {
 				hero.setDirectionX(0);
 				break;
 		}
+		hero.colide(rmachine.getAmount(),(GameEntity**)rmachine.getPrintableAll());
 	}
 }

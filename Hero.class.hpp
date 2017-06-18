@@ -10,12 +10,12 @@ public:
 	Hero();
 	Hero(Hero const & cpy);
 
-	Hero &			operator=(Hero const & rhs);
+	Hero &				operator=(Hero const & rhs);
 
-	Hero *			clone(void);
+	Hero *				clone(void);
 
-	virtual void	attack(void);
-	virtual void	takeDamage(unsigned int damage);
+	virtual void		attack(void);
+	virtual void		takeDamage(unsigned int damage);
 	// virtual void	move(int input);
 
 	~Hero();

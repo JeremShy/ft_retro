@@ -21,6 +21,7 @@ public:
 	void	removePrintable(unsigned int id);
 	void	removePrintable(IPrintable *obj);
 	IPrintable	*getPrintable(unsigned int _id);
+	IPrintable  **getPrintableAll(void);
 
 	unsigned int	getAmount(void) const;
 

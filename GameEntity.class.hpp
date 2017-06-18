@@ -20,8 +20,8 @@ public:
 
 	virtual GameEntity *	clone();
 
-	void							display(void);
-	void							erase(void);
+	void					display(void);
+	void					erase(void);
 	virtual void			attack(void);
 	virtual void			takeDamage(unsigned int);
 	// virtual void			move(int input);
@@ -33,6 +33,8 @@ public:
 	void			setModel(char model);
 	void			setHealth(unsigned int);
 	void			setDamage(unsigned int);
+
+	int 			colide(int amount, GameEntity** props);
 
 	virtual ~GameEntity();
 

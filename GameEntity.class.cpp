@@ -76,3 +76,26 @@ void				GameEntity::display(void) {
 void				GameEntity::erase(void) {
 	mvdelch(this->getPositionY(), this->getPositionX());
 }
+
+int					GameEntity::colide(int amount, GameEntity** props){
+	int			deathCount = 0;
+
+	for (int i = 0; i < amount; i++){
+		for (int y = i + 1; y < amount; y++){
+			if (props[i] != NULL && props[y] != NULL){
+				if (props[i]->getPositionX() == props[y]->getPositionX() && props[i]->getPositionY() == props[y]->getPositionY()){
+					std::cout << "colision" << std::endl;
+					props[i]->takeDamage(props[y]->getDamage());
+					props[y]->takeDamage(props[i]->getDamage());
+					if (props[i]->getHealth() == 0){
+						deathCount++; props[i]->erase();delete props[i]; props[i] = NULL;
+					}
+					if (props[y]->getHealth() == 0){
+						deathCount++; props[y]->erase();delete props[y]; props[y] = NULL;
+					}
+				}
+			}
+		}
+	}
+	return deathCount;
+}

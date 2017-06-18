@@ -120,6 +120,10 @@ IPrintable	*RenderMachine::getPrintable(unsigned int idx) {
 	return (this->_tab[idx]);
 }
 
+IPrintable **RenderMachine::getPrintableAll(void){
+	return this->_tab;
+}
+
 unsigned int	RenderMachine::getAmount(void) const {
 	return (this->_amount);
 }
