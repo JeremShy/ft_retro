@@ -1,8 +1,6 @@
 #ifndef GAME_ENTITY_HPP
 # define GAME_ENTITY_HPP
 
-# include "Direction.enum.hpp"
-
 # define UP_ARROW 1
 # define DOWN_ARROW 2
 # define LEFT_ARROW 3
@@ -21,6 +19,7 @@ public:
 	void					display(void);
 	void					erase(void);
 	virtual void			takeDamage(unsigned int);
+	void					move();
 	bool					doesCollide(GameEntity *col);
 	// virtual void			move(int input);
 
@@ -50,8 +49,8 @@ public:
 
 protected:
 	GameEntity();
-	unsigned int 	_x;
-	unsigned int 	_y;
+	float		 	_x;
+	float		 	_y;
 	unsigned int 	_health;
 	unsigned int 	_damage;
 	char 			_model;

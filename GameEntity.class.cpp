@@ -35,6 +35,12 @@ GameEntity *		GameEntity::clone(void){
 	return new GameEntity(*this);
 }
 
+void				GameEntity::move(void) {
+	this->_x += this->_direction[0];
+	this->_y += this->_direction[1];
+}
+
+
 void					GameEntity::takeDamage(unsigned int amount) {
 	//Maybe decrement with the armor of the GE.
 	//

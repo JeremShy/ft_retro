@@ -48,8 +48,8 @@
 #include "Hero.class.hpp"
 #include "Bullet.class.hpp"
 #include "display.hpp"
-#include "direction.enum.hpp"
 #include "Timer.class.hpp"
+#include "GameMachine.class.hpp"
 #include <curses.h>
 #include <unistd.h>
 #include <fstream>
