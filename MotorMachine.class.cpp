@@ -53,9 +53,20 @@ void	MotorMachine::moveAllExcept(AMovable *obj, RenderMachine &render) {
 			for (unsigned int y = 0; y < this->_amount; y++) {
 				if (y != i && this->_tab[i] != NULL && this->_tab[y] != NULL){
 					if ((this->_tab[i])->doesCollide(this->_tab[y])){
-						render.removePrintable(i);
-						this->removeMovable(i);
-						this->_tab[i] = NULL;
+						AMovable* 	ptr = this->_tab[y];
+						this->_tab[i]->takeDamage(this->_tab[y]->getDamage());
+						this->_tab[y]->takeDamage(this->_tab[i]->getDamage());
+						if (this->_tab[i]->getHealth() == 0){
+							AMovable*	ptr2 = this->_tab[i];
+							render.removePrintable(this->_tab[i]);
+							this->removeMovable(this->_tab[i]);
+							delete ptr2;
+						}
+						if (ptr->getHealth() == 0){
+							render.removePrintable(ptr);
+							this->removeMovable(ptr);
+							delete ptr;
+						}
 					}
 				}
 			}

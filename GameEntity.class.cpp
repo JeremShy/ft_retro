@@ -2,11 +2,11 @@
 #include "display.hpp"
 #include <fstream>
 
-GameEntity::GameEntity(char model, unsigned int x = 0, unsigned int y = 0, unsigned int health = 0, unsigned int damage = 0) : AMovable(x, y), _model(model), _health(health), _damage(damage){
+GameEntity::GameEntity(char model, unsigned int x = 0, unsigned int y = 0, unsigned int health = 0, unsigned int damage = 0) : AMovable(x, y, health, damage), _model(model){
 	return;
 }
 
-GameEntity::GameEntity(GameEntity const & cpy) : AMovable(cpy.getRealPositionX(), cpy.getRealPositionY()), _model(cpy.getModel()), _health(cpy.getHealth()), _damage(cpy.getDamage()){
+GameEntity::GameEntity(GameEntity const & cpy) : AMovable(cpy.getRealPositionX(), cpy.getRealPositionY(), cpy.getHealth(), cpy.getDamage()), _model(cpy.getModel()){
 	return;
 }
 
@@ -35,11 +35,11 @@ void					GameEntity::takeDamage(unsigned int amount) {
 	std::fstream log("log", std::fstream::out | std::fstream::app);
 	log << "A GameEntity took " << amount << " damages." << std::endl;
 	log.close();
-if (amount >= this->_health) {
-		this->_health = 0;
+	if (amount >= this->getHealth()) {
+		this->setHealth(0);
 		return ;
 	}
-	this->_health -= amount;
+	this->setHealth(this->getHealth() - amount);
 }
 
 /*-----------------------------------------------------------getter*/
@@ -48,28 +48,10 @@ char				GameEntity::getModel(void) const{
 	return this->_model;
 }
 
-unsigned int 		GameEntity::getHealth(void) const{
-	return this->_health;
-}
-
-unsigned int 		GameEntity::getDamage(void) const{
-	return this->_damage;
-}
-
 /*-----------------------------------------------------------setter*/
 
 void				GameEntity::setModel(char model){
 	this->_model = model;
-	return;
-}
-
-void				GameEntity::setHealth(unsigned int health){
-	this->_health = health;
-	return;
-}
-
-void				GameEntity::setDamage(unsigned int damage){
-	this->_damage = damage;
 	return;
 }
 

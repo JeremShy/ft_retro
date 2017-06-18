@@ -4,6 +4,7 @@
 # include <string>
 # include <iostream>
 # include "IPrintable.class.hpp"
+# include "AMovable.class.hpp"
 # include "IMachine.class.hpp"
 
 class RenderMachine : public IMachine{
@@ -20,6 +21,7 @@ public:
 	void	addPrintable(IPrintable *obj);
 	void	removePrintable(unsigned int id);
 	void	removePrintable(IPrintable *obj);
+	void	removePrintable(AMovable *obj);
 	IPrintable	*getPrintable(unsigned int _id);
 	IPrintable  **getPrintableAll(void);
 

@@ -27,20 +27,14 @@ public:
 	// virtual void			move(int input);
 
 	char			getModel(void) const;
-	unsigned int 	getHealth(void) const;
-	unsigned int 	getDamage(void) const;
 
 	void			setModel(char model);
-	void			setHealth(unsigned int);
-	void			setDamage(unsigned int);
 
 	virtual ~GameEntity();
 
 protected:
 	GameEntity();
 	char 			_model;
-	unsigned int 	_health;
-	unsigned int 	_damage;
 
 };
 

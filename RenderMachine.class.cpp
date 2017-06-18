@@ -110,6 +110,15 @@ void	RenderMachine::removePrintable(IPrintable *obj) {
 	std::cout << "There was an error while trying to REMOVE a printable." << std::endl;
 }
 
+void	RenderMachine::removePrintable(AMovable *obj) {
+	for (unsigned int i = 0; i < this->_amount; i++) {
+		if ((void*)(this->_tab[i]) == (void*)obj) {
+			this->removePrintable(i);
+			return ;
+		}
+	}
+	std::cout << "There was an error while trying to REMOVE a printable." << std::endl;
+}
 
 IPrintable	*RenderMachine::getPrintable(unsigned int idx) {
 	if (idx >= this->_amount) {
