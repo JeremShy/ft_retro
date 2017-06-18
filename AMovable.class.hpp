@@ -13,6 +13,7 @@ public:
 
 	AMovable & operator=(AMovable const & rhs);
 	virtual		AMovable *clone() = 0;
+	bool		doesCollide(AMovable *col);
 
 	unsigned int 	getPositionX(void) const;
 	unsigned int 	getPositionY(void) const;

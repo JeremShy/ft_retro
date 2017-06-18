@@ -137,6 +137,5 @@ int main() {
 				hero->setDirectionX(0);
 				break;
 		}
-		mmachine.collide(rmachine,(GameEntity**)rmachine.getPrintableAll(),rmachine.getAmount());
 	}
 }

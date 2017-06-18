@@ -1,4 +1,5 @@
 #include "AMovable.class.hpp"
+#include <unistd.h>
 
 AMovable::AMovable(void) : _x(0), _y(0) {
 	(this->_direction)[0] = 0;
@@ -83,3 +84,9 @@ float 				AMovable::getRealPositionX(void) const {
 float 				AMovable::getRealPositionY(void) const {
 	return (this->_y);
 }
+bool				AMovable::doesCollide(AMovable *obj){
+	if (this->getPositionX() == obj->getPositionX() && this->getPositionY() == obj->getPositionY())
+		return true;
+	return false;
+}
+

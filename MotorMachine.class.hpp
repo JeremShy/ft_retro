@@ -22,7 +22,6 @@ public:
 	void	removeMovable(unsigned int id);
 	void	removeMovable(AMovable *obj);
 	AMovable	*getMovable(unsigned int _id);
-	void	collide(RenderMachine &rmachine, GameEntity **props, int amount);
 
 	unsigned int	getAmount(void) const;
 
