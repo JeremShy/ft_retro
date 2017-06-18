@@ -1,7 +1,6 @@
 #include "GameEntity.class.hpp"
 #include "display.hpp"
 #include <fstream>
-#include <sys/ioctl.h>
 #include <iostream>
 
 GameEntity::GameEntity(char model, unsigned int x = 0, unsigned int y = 0, unsigned int health = 0, unsigned int damage = 0) : _x(x), _y(y), _health(health), _damage(damage) , _model(model){
@@ -43,17 +42,10 @@ void				GameEntity::move(void) {
 }
 
 bool				GameEntity::escapedBoundaries(void) {
-	struct winsize size;
 	std::fstream log("log", std::fstream::out | std::fstream::app);
-	if (ioctl(0, TIOCGWINSZ, (char *) &size) < 0)
-	{
-		close_ncurse();
-		std::cout << "error with ioctl" << std::endl;
-		exit(EXIT_FAILURE);
-	}
-	if (this->_y > size.ws_row - 1 || this->_y < 0 || this->_x > size.ws_col - 1 || this->_x < 0)
+	if (this->_y > get_size_y() - 1 || this->_y < 0 || this->_x > get_size_x() - 1 || this->_x < 0)
 	{	
-		log << "OUT OF BOUND DETECTED : X " << _x << " - Y : " << _y << " ws_col : " << size.ws_col << " ws_row " << size.ws_row << std::endl; 	
+		log << "OUT OF BOUND DETECTED : X " << _x << " - Y : " << _y << " ws_col : " << get_size_x() << " ws_row " << get_size_y() << std::endl; 	
 		return (true);
 	}
 	log.close();

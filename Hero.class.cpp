@@ -2,7 +2,6 @@
 #include "display.hpp"
 #include <cstdlib>
 #include <iostream>
-#include <sys/ioctl.h>
 #include <fstream>
 
 Hero::Hero(void) : GameEntity('H', 3, 20, 1, 20){
@@ -31,7 +30,8 @@ Hero &			Hero::operator=(Hero const & rhs){
 	return *this;
 }
 
-Hero *			Hero::clone(void){
+Hero *			Hero::clone(void)
+{
 	return new Hero(*this);
 }
 
@@ -56,16 +56,9 @@ Bullet	*Hero::shoot(void) {
 }
 
 void				Hero::move(void) {
-	struct winsize size;
-	if (ioctl(0, TIOCGWINSZ, (char *) &size) < 0)
-	{
-		close_ncurse();
-		std::cout << "error with ioctl" << std::endl;
-		exit(EXIT_FAILURE);
-	}
-	if (this->_x + this->_direction[0] < 0 || this->_x + this->_direction[0] > size.ws_col - 1)
+	if (this->_x + this->_direction[0] < 0 || this->_x + this->_direction[0] > get_size_x() - 1)
 		return;
-	if (this->_y + this->_direction[1] < 0 || this->_y + this->_direction[1] > size.ws_row - 1)
+	if (this->_y + this->_direction[1] < 0 || this->_y + this->_direction[1] > get_size_y() - 1)
 		return;
 	this->_x += this->_direction[0];
 	this->_y += this->_direction[1];

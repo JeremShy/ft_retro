@@ -1,37 +1,37 @@
 
-Adding hero : 0x7f8fe9c05a20
-Trying to add a Game Entity directly [0x7f8fe9c05a20] at the end of the pile
+Adding hero : 0x7ff3a2d01df0
+Trying to add a Game Entity directly [0x7ff3a2d01df0] at the end of the pile
 starting program !
-Spawning enenmy at 339 - 25 with velocity : -0.16, and with address: 0x7f8fe9d00000
-Adding enemy to both machines 0x7f8fe9d00000
-Trying to add a Game Entity directly [0x7f8fe9d00000] at the end of the pile
-Spawning enenmy at 338 - 8 with velocity : -0.16, and with address: 0x7f8fe9e00000
-Adding enemy to both machines 0x7f8fe9e00000
-Trying to add a Game Entity directly [0x7f8fe9e00000] at the end of the pile
-Spawning enenmy at 362 - 37 with velocity : -0.16, and with address: 0x7f8fe9d000d0
-Adding enemy to both machines 0x7f8fe9d000d0
-Trying to add a Game Entity directly [0x7f8fe9d000d0] at the end of the pile
+Spawning enenmy at 339 - 25 with velocity : -0.16, and with address: 0x7ff3a2d01f90
+Adding enemy to both machines 0x7ff3a2d01f90
+Trying to add a Game Entity directly [0x7ff3a2d01f90] at the end of the pile
+Spawning enenmy at 338 - 8 with velocity : -0.16, and with address: 0x7ff3a2c03da0
+Adding enemy to both machines 0x7ff3a2c03da0
+Trying to add a Game Entity directly [0x7ff3a2c03da0] at the end of the pile
+Spawning enenmy at 362 - 37 with velocity : -0.16, and with address: 0x7ff3a2c03dd0
+Adding enemy to both machines 0x7ff3a2c03dd0
+Trying to add a Game Entity directly [0x7ff3a2c03dd0] at the end of the pile
 OUT OF BOUND DETECTED : X 361.84 - Y : 37 ws_col : 362 ws_row 72
-Out of bonds : 0x7f8fe9d000d0
+Out of bonds : 0x7ff3a2c03dd0
 An enemy was killed
-Spawning enenmy at 335 - 6 with velocity : -0.16, and with address: 0x7f8fe9e00030
-Adding enemy to both machines 0x7f8fe9e00030
-Trying to add a Game Entity directly [0x7f8fe9e00030] at the end of the pile
-Spawning enenmy at 352 - 35 with velocity : -0.15, and with address: 0x7f8fe9c05a50
-Adding enemy to both machines 0x7f8fe9c05a50
-Trying to add a Game Entity directly [0x7f8fe9c05a50] at the end of the pile
-Trying to add a Game Entity directly [0x7f8fe9f00000] at the end of the pile
-OUT OF BOUND DETECTED : X 4.5 - Y : 71 ws_col : 362 ws_row 43
-Out of bonds : 0x7f8fe9f00000
-A bullet disappeared
-Trying to add a Game Entity directly [0x7f8fe9e005c0] at the end of the pile
-OUT OF BOUND DETECTED : X 4.5 - Y : 71 ws_col : 362 ws_row 43
-Out of bonds : 0x7f8fe9e005c0
-A bullet disappeared
-Spawning enenmy at 353 - 34 with velocity : -0.16, and with address: 0x7f8fe9c05a80
-Adding enemy to both machines 0x7f8fe9c05a80
-Trying to add a Game Entity directly [0x7f8fe9c05a80] at the end of the pile
-Trying to add a Game Entity directly [0x7f8fe9d000d0] at the end of the pile
-OUT OF BOUND DETECTED : X 4.5 - Y : 71 ws_col : 362 ws_row 43
-Out of bonds : 0x7f8fe9d000d0
-A bullet disappeared
+Spawning enenmy at 335 - 26 with velocity : -0.16, and with address: 0x7ff3a2e00170
+Adding enemy to both machines 0x7ff3a2e00170
+Trying to add a Game Entity directly [0x7ff3a2e00170] at the end of the pile
+Spawning enenmy at 352 - 25 with velocity : -0.15, and with address: 0x7ff3a2f00170
+Adding enemy to both machines 0x7ff3a2f00170
+Trying to add a Game Entity directly [0x7ff3a2f00170] at the end of the pile
+Spawning enenmy at 353 - 1 with velocity : -0.16, and with address: 0x7ff3a2e001a0
+Adding enemy to both machines 0x7ff3a2e001a0
+Trying to add a Game Entity directly [0x7ff3a2e001a0] at the end of the pile
+Spawning enenmy at 353 - 69 with velocity : -0.14, and with address: 0x7ff3a2e001d0
+Adding enemy to both machines 0x7ff3a2e001d0
+Trying to add a Game Entity directly [0x7ff3a2e001d0] at the end of the pile
+Spawning enenmy at 355 - 7 with velocity : -0.16, and with address: 0x7ff3a2c03dd0
+Adding enemy to both machines 0x7ff3a2c03dd0
+Trying to add a Game Entity directly [0x7ff3a2c03dd0] at the end of the pile
+OUT OF BOUND DETECTED : X -0.0462351 - Y : 25 ws_col : 362 ws_row 72
+Out of bonds : 0x7ff3a2d01f90
+An enemy was killed
+Spawning enenmy at 342 - 19 with velocity : -0.14, and with address: 0x7ff3a2f001a0
+Adding enemy to both machines 0x7ff3a2f001a0
+Trying to add a Game Entity directly [0x7ff3a2f001a0] at the end of the pile

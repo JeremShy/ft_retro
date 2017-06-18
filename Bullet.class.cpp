@@ -1,5 +1,6 @@
 #include "Bullet.class.hpp"
 #include <fstream>
+#include <iostream>
 
 Bullet::Bullet(char model, int x, int y, unsigned int health, unsigned int damage) : GameEntity(model, x, y, health, damage) {
 	return;

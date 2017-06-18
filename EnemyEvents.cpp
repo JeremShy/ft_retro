@@ -16,16 +16,8 @@ Enemy*			spawnRand(void){
 		ret = new EnemyA;
 	else
 		ret = new EnemyB;
-	struct winsize size;
-	if (ioctl(0, TIOCGWINSZ, (char *) &size) < 0)
-	{
-		close_ncurse();
-		std::cout << "error with ioctl" << std::endl;
-		exit(EXIT_FAILURE);
-	}
-	// int	y = rand() % size.ws_row;
-	int	y = rand() % size.ws_row;
-	int x = size.ws_col - rand() % 30;
+	int	y = rand() % get_size_y();
+	int x = get_size_x() - rand() % 30;
 	ret->setPositionX(x);
 	ret->setPositionY(y);
 	double velocity = ((rand() % 3) + 14) / 100.0;

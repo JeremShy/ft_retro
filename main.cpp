@@ -57,6 +57,7 @@ int main() {
 		clear();
 		hero->move();
 		machine.renderAll();
+		print_interface(hero);
 		refresh();
 		timeout(0); //Permet de rendre l'appel à getch() non bloquant.
 		ch = getch();
