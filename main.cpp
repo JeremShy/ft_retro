@@ -81,8 +81,9 @@ int main() {
 	init_ncurse();
 	t1.start();
 	t2.start();
-	std::fstream a("log", std::fstream::out | std::fstream::trunc);
-	a.close();
+	std::fstream log("log", std::fstream::out | std::fstream::trunc);
+	log << "starting program !" << std::endl;
+	log.close();
 	while (1) {
 		/*
 			Il suffit de créer des timers comme suit pour les evenements arrivant toutes les quelques secondes. ici par exemple, tous les ennemis vont bouger 5 fois par secondes, et un nouvel ennemi popera toutes les trois secondes.

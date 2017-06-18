@@ -1,9 +1,18 @@
+<<<<<<< HEAD
 Spawning enenmy at 112 - 24 with velocity : -0.22
 Spawning enenmy at 136 - 9 with velocity : -0.22
 Spawning enenmy at 109 - 42 with velocity : -0.22
+=======
+starting program !
+Spawning enenmy at 218 - 32 with velocity : -0.16
+Spawning enenmy at 242 - 37 with velocity : -0.16
+Spawning enenmy at 215 - 10 with velocity : -0.16
+>>>>>>> 9536e50fa9d80d22f213d9b59768782945d0d625
 A collision was detected !
 A GameEntity took 20 damages.
+trying to remove item at 0x100aea178. (first if)
 An enemy was killed
+<<<<<<< HEAD
 Spawning enenmy at 126 - 45 with velocity : -0.21
 Spawning enenmy at 127 - 17 with velocity : -0.22
 Spawning enenmy at 127 - 25 with velocity : -0.2
@@ -26,3 +35,5 @@ Spawning enenmy at 123 - 16 with velocity : -0.2
 A collision was detected !
 A GameEntity took 20 damages.
 An enemy was killed
+=======
+>>>>>>> 9536e50fa9d80d22f213d9b59768782945d0d625
