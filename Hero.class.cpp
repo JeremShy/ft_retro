@@ -40,3 +40,10 @@ void			Hero::takeDamage(unsigned int damage){
 	}
 	return;
 }
+
+Bullet	*Hero::shoot(void) {
+	Bullet *ret = new Bullet('=', this->getPositionX() + 1, this->getPositionY(), 1, this->_damage);
+
+	ret->setDirectionX(2);
+	return (ret);
+}

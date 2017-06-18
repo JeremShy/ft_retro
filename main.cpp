@@ -65,19 +65,19 @@ int main() {
 
 	RenderMachine rmachine;
 	MotorMachine	mmachine;
-	Hero hero;
-	EnemyA enemy;
-	EnemyB enemy2;
+	Hero *hero = new Hero();
+	Enemy *enemy = new EnemyA();
+	// Enemy *enemy2 = new EnemyB();
 	Timer t1, t2; /*Timer est une classe qui permet de créer un chronometre. On le démarre avec start() et on peu ensuite récupérer le temps écoulé depuis son démarrage avec Timer::getDiffAsMillis(). Y a aussi la methode restart() qui fait
 									exactement la même chose que la méthode start(), mais je trouvais start plus claire. Ici, on crée un timer par intervalle de temps qu'on souhaite tester. */
 	int ch ;
 
-	rmachine.addPrintable(&hero);
-	mmachine.addMovable(&hero);
+	rmachine.addPrintable(hero);
+	mmachine.addMovable(hero);
 
-	rmachine.addPrintable(&enemy);
-	mmachine.addMovable(&enemy);
-	enemy.setDirectionX(1);
+	rmachine.addPrintable(enemy);
+	mmachine.addMovable(enemy);
+	enemy->setDirectionX(1);
 
 	std::fstream file("a", std::fstream::out | std::fstream::trunc); //Simple fichier permettant de faire des debugs simples sans avoir à passer par la console. Faudra virer ça au rendu :).
 	file << "hei" << std::endl;
@@ -99,11 +99,12 @@ int main() {
 		}
 		if(t2.getDiffAsMillis() >= 1000 / 5) {
 			t2.restart();
-			mmachine.moveAllExcept(&hero);
+			mmachine.moveAllExcept(hero);
 		}
+		Bullet *bul;
 		clear();
 		// mmachine.moveAll();
-		hero.move();
+		hero->move();
 		rmachine.renderAll();
 		refresh();
 		timeout(0); //Permet de rendre l'appel à getch() non bloquant.
@@ -114,27 +115,29 @@ int main() {
 				return (0);
 				break;
 			case KEY_UP:
-				hero.setDirectionX(0);
-				hero.setDirectionY(-0.5);
+				hero->setDirectionX(0);
+				hero->setDirectionY(-0.5);
 				break;
 			case KEY_DOWN:
-				hero.setDirectionX(0);
-				hero.setDirectionY(0.5);
+				hero->setDirectionX(0);
+				hero->setDirectionY(0.5);
 				break;
 			case KEY_LEFT:
-				hero.setDirectionY(0);
-				hero.setDirectionX(-0.5);
+				hero->setDirectionY(0);
+				hero->setDirectionX(-0.5);
 				break;
 			case KEY_RIGHT:
-				hero.setDirectionY(0);
-				hero.setDirectionX(0.5);
+				hero->setDirectionY(0);
+				hero->setDirectionX(0.5);
 				break;
 			case ' ':
-				rmachine.addPrintable(hero.attack()); // <---- Ce serait une bonne chose de renommer "attack()" en "shoot()" pour plus de clarté, je trouve. Mais flemme.
+				bul = hero->shoot(); // <---- Ce serait une bonne chose de renommer "attack()" en "shoot()" pour plus de clarté, je trouve. Mais flemme.
+				rmachine.addPrintable(bul);
+				mmachine.addMovable(bul);
 				break;
 			default:
-				hero.setDirectionY(0);
-				hero.setDirectionX(0);
+				hero->setDirectionY(0);
+				hero->setDirectionX(0);
 				break;
 		}
 		mmachine.collide(rmachine,(GameEntity**)rmachine.getPrintableAll(),rmachine.getAmount());

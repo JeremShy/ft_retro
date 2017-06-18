@@ -4,7 +4,10 @@
 #include "GameEntity.class.hpp"
 #include "AMovable.class.hpp"
 #include "Bullet.class.hpp"
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2de194423251c58f2f995d22d0d5c2d3a4d026fb
 class Hero : public GameEntity
 {
 public:
@@ -15,7 +18,8 @@ public:
 
 	Hero *				clone(void);
 
-	Bullet*			attack(void);
+	virtual void		attack(void);
+	Bullet					*shoot(void);
 	virtual void		takeDamage(unsigned int damage);
 	// virtual void	move(int input);
 
