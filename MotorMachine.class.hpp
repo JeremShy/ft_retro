@@ -4,9 +4,9 @@
 # include <string>
 # include <iostream>
 # include "AMovable.class.hpp"
-# include "Machine.class.hpp"
+# include "IMachine.class.hpp"
 
-class MotorMachine : public Machine {
+class MotorMachine : public IMachine {
 public:
 	MotorMachine(void);
 	MotorMachine(MotorMachine const & src);
@@ -15,6 +15,7 @@ public:
 	MotorMachine & operator=(MotorMachine const & rhs);
 
 	void	moveAll(void);
+	void	moveAllExcept(AMovable *obj);
 	void	addMovable(unsigned int id, AMovable *obj);
 	void	addMovable(AMovable *obj);
 	void	removeMovable(unsigned int id);

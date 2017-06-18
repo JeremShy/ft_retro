@@ -4,9 +4,9 @@
 # include <string>
 # include <iostream>
 # include "IPrintable.class.hpp"
-# include "Machine.class.hpp"
+# include "IMachine.class.hpp"
 
-class RenderMachine : public Machine{
+class RenderMachine : public IMachine{
 public:
 	RenderMachine(void);
 	RenderMachine(RenderMachine const & src);

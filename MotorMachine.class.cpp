@@ -36,6 +36,13 @@ void	MotorMachine::moveAll(void) {
 	}
 }
 
+void	MotorMachine::moveAllExcept(AMovable *obj) {
+	for (unsigned int i = 0; i < this->_amount; i++) {
+		// std::cout << "i : " << i << std::endl;
+		if (this->_tab[i] != obj)
+			(this->_tab[i])->move();
+	}
+}
 
 void	MotorMachine::addMovable(unsigned int idx, AMovable *obj) { // TO DO : Tester quand les iprintable seront fonctionels.
 	if (idx > this->_amount + 1) {

@@ -1,12 +1,12 @@
-#ifndef MACHINE_CLASS_H
-# define MACHINE_CLASS_H
+#ifndef IMACHINE_CLASS_H
+# define IMACHINE_CLASS_H
 
 # include <string>
 # include <iostream>
 
-class Machine {
+class IMachine {
 public:
-	~Machine();
+	~IMachine();
 
 	virtual unsigned int	getAmount(void) const = 0;
 private:
