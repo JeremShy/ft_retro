@@ -1,10 +1,10 @@
 #include "display.hpp"
 
-void	print_ip(IPrintable *target) {
+void	print_ip(GameEntity *target) {
 	target->display();
 }
 
-void	erase_ip(IPrintable *target) {
+void	erase_ip(GameEntity *target) {
 	target->erase();
 }
 

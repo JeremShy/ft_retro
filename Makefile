@@ -1,18 +1,14 @@
-SRC_NAME =	Enemy.class.cpp \
-						EnemyA.class.cpp \
-						EnemyB.class.cpp \
-						EnemyEvents.cpp \
-						GameEntity.class.cpp \
-						Hero.class.cpp \
-						Bullet.class.cpp \
-						IPrintable.class.cpp \
-						RenderMachine.class.cpp \
-						display.cpp \
-						main.cpp \
-						AMovable.class.cpp \
-						MotorMachine.class.cpp \
-						IMachine.class.cpp \
-						Timer.class.cpp
+SRC_NAME =	Bullet.class.cpp \
+				Enemy.class.cpp \
+				EnemyA.class.cpp \
+				EnemyB.class.cpp \
+				EnemyEvents.cpp \
+				GameEntity.class.cpp \
+				Hero.class.cpp \
+				Timer.class.cpp \
+				display.cpp
+				# main.cpp
+
 
 
 INC_PATH = ./

@@ -47,14 +47,8 @@
 #include "GameEntity.class.hpp"
 #include "Hero.class.hpp"
 #include "Bullet.class.hpp"
-#include "IPrintable.class.hpp"
-#include "RenderMachine.class.hpp"
 #include "display.hpp"
 #include "direction.enum.hpp"
-#include "AMovable.class.hpp"
-#include "MotorMachine.class.hpp"
-#include "IMachine.class.hpp" /*	J'avais du ajouter cette interface en faisant des tests, c'est juste un truc ou j'ai mis une fonction au hasard, on pourrait faire ça plus proprement, mais est-ce vraiment nécéssaire.. X)
-																	Du coup finalement j'ai décidé de la laisser parce que je pense que ça risque de nous être utile de pouvoir foutre nos RenderMachine et nos MotorMachine dans un même tableau via du polymorphisme */
 #include "Timer.class.hpp"
 #include <curses.h>
 #include <unistd.h>

@@ -2,7 +2,6 @@
 # define HERO_CLASS_HPP
 
 #include "GameEntity.class.hpp"
-#include "AMovable.class.hpp"
 #include "Bullet.class.hpp"
 
 class Hero : public GameEntity

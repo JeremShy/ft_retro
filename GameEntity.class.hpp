@@ -21,29 +21,41 @@ public:
 	void					display(void);
 	void					erase(void);
 	virtual void			takeDamage(unsigned int);
+	bool					doesCollide(GameEntity *col);
 	// virtual void			move(int input);
 
 	char			getModel(void) const;
-	int 			getPositionX(void) const;
-	int 			getPositionY(void) const;
+	unsigned int	getPositionX(void) const;
+	unsigned int	getPositionY(void) const;
+	float 			getRealPositionX(void) const;
+	float 			getRealPositionY(void) const;
+
+	void			setPositionX(unsigned int);
+	void			setPositionY(unsigned int);
+
+	void			setRealPositionX(float);
+	void			setRealPositionY(float);
+
+	void			setDirection(float[2]);
+	void			setDirectionX(float);
+	void			setDirectionY(float);
 	unsigned int 	getHealth(void) const;
 	unsigned int 	getDamage(void) const;
 
 	void			setModel(char model);
-	void 			setPositionX(int x) const;
-	void 			setPositionY(int y) const;
-	void		 	setHealth(unsigned int health) const;
-	void		 	setDamage(unsigned int damage) const;
+	void		 	setHealth(unsigned int health);
+	void		 	setDamage(unsigned int damage);
 
 	virtual ~GameEntity();
 
 protected:
 	GameEntity();
-	char 			_model;
-	int 			_x;
-	int 			_y;
+	unsigned int 	_x;
+	unsigned int 	_y;
 	unsigned int 	_health;
 	unsigned int 	_damage;
+	char 			_model;
+	float			_direction[2];
 
 };
 
