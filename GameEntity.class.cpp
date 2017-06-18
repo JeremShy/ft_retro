@@ -1,5 +1,6 @@
 #include "GameEntity.class.hpp"
 #include "display.hpp"
+#include <fstream>
 
 GameEntity::GameEntity(char model, unsigned int x = 0, unsigned int y = 0, unsigned int health = 0, unsigned int damage = 0) : AMovable(x, y), _model(model), _health(health), _damage(damage){
 	return;
@@ -31,7 +32,10 @@ GameEntity *		GameEntity::clone(void){
 void					GameEntity::takeDamage(unsigned int amount) {
 	//Maybe decrement with the armor of the GE.
 	//
-	if (amount >= this->_health) {
+	std::fstream log("log", std::fstream::out | std::fstream::app);
+	log << "A GameEntity took " << amount << " damages." << std::endl;
+	log.close();
+if (amount >= this->_health) {
 		this->_health = 0;
 		return ;
 	}

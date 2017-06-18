@@ -1,4 +1,5 @@
 #include "Bullet.class.hpp"
+#include <fstream>
 
 Bullet::Bullet(char model, int x, int y, unsigned int health, unsigned int damage) : GameEntity(model, x, y, health, damage) {
 	return;
@@ -24,6 +25,9 @@ Bullet *			Bullet::clone(void){
 }
 
 Bullet::~Bullet(void){
+	std::fstream log("log", std::fstream::out | std::fstream::app);
+	log << "A bullet disappeared" << std::endl;
+	log.close();
 	return;
 }
 

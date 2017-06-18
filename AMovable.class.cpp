@@ -1,5 +1,6 @@
 #include "AMovable.class.hpp"
 #include <unistd.h>
+#include <fstream>
 
 AMovable::AMovable(void) : _x(0), _y(0) {
 	(this->_direction)[0] = 0;
@@ -86,7 +87,11 @@ float 				AMovable::getRealPositionY(void) const {
 }
 bool				AMovable::doesCollide(AMovable *obj){
 	if (this->getPositionX() == obj->getPositionX() && this->getPositionY() == obj->getPositionY())
+	{
+		std::fstream log("log", std::fstream::out | std::fstream::app);
+		log << "A collision was detected !" << std::endl;
+		log.close();
 		return true;
+	}
 	return false;
 }
-

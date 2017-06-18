@@ -48,6 +48,6 @@ void			Hero::takeDamage(unsigned int damage){
 Bullet	*Hero::shoot(void) {
 	Bullet *ret = new Bullet('=', this->getPositionX() + 1, this->getPositionY(), 1, this->_damage);
 
-	ret->setDirectionX(4);
+	ret->setDirectionX(0.5);
 	return (ret);
 }

@@ -81,6 +81,8 @@ int main() {
 	init_ncurse();
 	t1.start();
 	t2.start();
+	std::fstream a("log", std::fstream::out | std::fstream::trunc);
+	a.close();
 	while (1) {
 		/*
 			Il suffit de créer des timers comme suit pour les evenements arrivant toutes les quelques secondes. ici par exemple, tous les ennemis vont bouger 5 fois par secondes, et un nouvel ennemi popera toutes les trois secondes.
@@ -92,7 +94,7 @@ int main() {
 			rmachine.addPrintable(x);
 			mmachine.addMovable(x);
 		}
-		if(t2.getDiffAsMillis() >= 1000 / 20) {
+		if(t2.getDiffAsMillis() >= 1000 / 200) {
 			t2.restart();
 			mmachine.moveAllExcept(hero, rmachine);
 		}

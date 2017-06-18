@@ -7,7 +7,7 @@ int				enemiesPerLevel[5] = {10, 25, 60, 80, 100};
 
 Enemy*			spawnRand(void){
 
-	static std::fstream log("log", std::fstream::out | std::fstream::trunc); //Simple fichier permettant de faire des debugs simples sans avoir à passer par la console. Faudra virer ça au rendu :).
+	static std::fstream log("log", std::fstream::out | std::fstream::app); //Simple fichier permettant de faire des debugs simples sans avoir à passer par la console. Faudra virer ça au rendu :).
 
 	int		random = rand() % 2;
 	Enemy	*ret;
@@ -25,10 +25,12 @@ Enemy*			spawnRand(void){
 	}
 	int	y = rand() % size.ws_row;
 	int x = size.ws_col - rand() % 30;
-	log << "Spawning enenmy at "<< x << " - " << y << std::endl;
 	ret->setPositionX(x);
 	ret->setPositionY(y);
-	ret->setDirectionX(-1.0 * (((rand() % 4) + 1)) / 4);
+	double velocity = ((rand() % 3) + 20) / 100.0;
+	velocity *= -1.0;
+	log << "Spawning enenmy at "<< x << " - " << y << " with velocity : " << velocity << std::endl;
+	ret->setDirectionX(velocity);
 	return (ret);
 }
 
