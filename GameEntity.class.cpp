@@ -51,7 +51,7 @@ bool				GameEntity::escapedBoundaries(void) {
 		std::cout << "error with ioctl" << std::endl;
 		exit(EXIT_FAILURE);
 	}
-	if (this->_y > size.ws_row || this->_y < 0 || this->_x > size.ws_col || this->_x < 0)
+	if (this->_y > size.ws_row - 1 || this->_y < 0 || this->_x > size.ws_col - 1 || this->_x < 0)
 		return (true);
 	log.close();
 	return (false);

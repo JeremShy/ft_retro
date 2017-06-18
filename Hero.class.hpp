@@ -17,6 +17,9 @@ public:
 	virtual void		attack(void);
 	Bullet					*shoot(void);
 	virtual void		takeDamage(unsigned int damage);
+
+	void				move(void);
+
 	// virtual void	move(int input);
 
 	~Hero();
