@@ -30,29 +30,32 @@ MotorMachine & MotorMachine::operator=(MotorMachine const & rhs) {
 	return (*this);
 }
 
-void	MotorMachine::moveAll(void) {
+void	MotorMachine::moveAll(RenderMachine &render) {
 	for (unsigned int i = 0; i < this->_amount; i++) {
-		// std::cout << "i : " << i << std::endl;
 		(this->_tab[i])->move();
 		for (unsigned int y = 0; y < this->_amount; y++) {
 			if (y != i){
 				if ((this->_tab[i])->doesCollide(this->_tab[y])){
-					// do something
+					this->removeMovable(this->_tab[i]);
+					render.removePrintable(i);
+					this->_tab[i] = NULL;
 				}
 			}
 		}
 	}
 }
 
-void	MotorMachine::moveAllExcept(AMovable *obj) {
+void	MotorMachine::moveAllExcept(AMovable *obj, RenderMachine &render) {
 	for (unsigned int i = 0; i < this->_amount; i++) {
 		// std::cout << "i : " << i << std::endl;
-		if (this->_tab[i] != obj){
+		if (this->_tab[i] != obj && this->_tab[i] != NULL){
 			(this->_tab[i])->move();
 			for (unsigned int y = 0; y < this->_amount; y++) {
-				if (y != i){
+				if (y != i && this->_tab[i] != NULL && this->_tab[y] != NULL){
 					if ((this->_tab[i])->doesCollide(this->_tab[y])){
-						// do something
+						render.removePrintable(i);
+						this->removeMovable(i);
+						this->_tab[i] = NULL;
 					}
 				}
 			}
@@ -148,31 +151,3 @@ void					MotorMachine::describe() {
 		std::cout << "[" << i << "] : " << this->_tab[i] << std::endl;
 	}
 }
-
-/*void					MotorMachine::collide(RenderMachine &rmachine, GameEntity** props, int amount){
-	for (int i = 0; i < amount; i++){
-		for (int y = i + 1; y < amount; y++){
-			if (props[i] != NULL && props[y] != NULL){
-				if (props[i]->getPositionX() == props[y]->getPositionX() && props[i]->getPositionY() == props[y]->getPositionY()){
-					props[i]->takeDamage(props[y]->getDamage());
-
-					props[y]->takeDamage(props[i]->getDamage());
-					std::cout << "props[i]" << props[i]->getHealth() << " | props[y] " << props[y]->getHealth();
-					sleep(1);
-					if (props[i]->getHealth() == 0){
-						this->removeMovable(props[i]);
-						rmachine.removePrintable(props[i]);
-						delete props[i];
-						props[i] = NULL;
-					}
-					if (props[y]->getHealth() == 0){
-						this->removeMovable(props[y]);
-						rmachine.removePrintable(props[y]);
-						delete props[y];
-						props[y] = NULL;
-					}
-				}
-			}
-		}
-	}
-}*/

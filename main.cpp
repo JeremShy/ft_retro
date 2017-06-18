@@ -94,7 +94,7 @@ int main() {
 		}
 		if(t2.getDiffAsMillis() >= 1000 / 5) {
 			t2.restart();
-			mmachine.moveAllExcept(hero);
+			mmachine.moveAllExcept(hero, rmachine);
 		}
 		Bullet *bul;
 		clear();
