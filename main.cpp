@@ -66,7 +66,7 @@ int main() {
 	RenderMachine rmachine;
 	MotorMachine	mmachine;
 	Hero *hero = new Hero();
-	Enemy *enemy = new EnemyA();
+	Enemy *enemy = spawnRand();
 	// Enemy *enemy2 = new EnemyB();
 	Timer t1, t2; /*Timer est une classe qui permet de créer un chronometre. On le démarre avec start() et on peu ensuite récupérer le temps écoulé depuis son démarrage avec Timer::getDiffAsMillis(). Y a aussi la methode restart() qui fait
 									exactement la même chose que la méthode start(), mais je trouvais start plus claire. Ici, on crée un timer par intervalle de temps qu'on souhaite tester. */
@@ -77,7 +77,6 @@ int main() {
 
 	rmachine.addPrintable(enemy);
 	mmachine.addMovable(enemy);
-	enemy->setDirectionX(1);
 
 	init_ncurse();
 	t1.start();
@@ -87,12 +86,11 @@ int main() {
 			Il suffit de créer des timers comme suit pour les evenements arrivant toutes les quelques secondes. ici par exemple, tous les ennemis vont bouger 5 fois par secondes, et un nouvel ennemi popera toutes les trois secondes.
 			ceci sans interrompre les actions du joueur.
 		*/
-		if(t1.getDiffAsMillis() >= 3000) {
+		if(t1.getDiffAsMillis() >= 1500) {
 			t1.restart();
-			Enemy *x = new EnemyA;
+			Enemy *x = spawnRand();
 			rmachine.addPrintable(x);
 			mmachine.addMovable(x);
-			x->setDirectionX(0.2);
 		}
 		if(t2.getDiffAsMillis() >= 1000 / 5) {
 			t2.restart();

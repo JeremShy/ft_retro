@@ -1,14 +1,33 @@
 #include "EnemyEvents.hpp"
+#include <sys/ioctl.h>
+#include <fstream>
 
 int				enemiesPerLevel[5] = {10, 25, 60, 80, 100};
 
 Enemy*			spawnRand(void){
-	int		rand = arc4random() % 2;
 
-	if (rand == 0)
-		return new EnemyA;
+	static std::fstream log("log", std::fstream::out | std::fstream::trunc); //Simple fichier permettant de faire des debugs simples sans avoir à passer par la console. Faudra virer ça au rendu :).
+
+	int		random = rand() % 2;
+	Enemy	*ret;
+
+	if (random == 0)
+		ret = new EnemyA;
 	else
-		return new EnemyB;
+		ret = new EnemyB;
+	struct winsize size;
+	if (ioctl(0, TIOCGWINSZ, (char *) &size) < 0)
+	{
+		std::cout << "error with ioctl" << std::endl;
+		exit(EXIT_FAILURE);
+	}
+	int	y = rand() % size.ws_row;
+	int x = size.ws_col - rand() % 30;
+	log << "Spawning enenmy at "<< x << " - " << y << std::endl;
+	ret->setPositionX(x);
+	ret->setPositionY(y);
+	ret->setDirectionX(-1 * ((rand() % 4) + 1));
+	return (ret);
 }
 
 Enemy**			spawnHorde(int level){
