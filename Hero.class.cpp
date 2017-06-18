@@ -1,4 +1,6 @@
 #include "Hero.class.hpp"
+#include "display.hpp"
+#include <cstdlib>
 
 Hero::Hero(void) : GameEntity('H', 0, 0, 1, 20){
 	return;
@@ -40,7 +42,8 @@ void Hero::attack(void) {
 void			Hero::takeDamage(unsigned int damage){
 	this->setHealth(this->getHealth() - damage);
 	if (this->getHealth() == 0){
-		//die + end of game
+		close_ncurse();
+		exit(0);
 	}
 	return;
 }
