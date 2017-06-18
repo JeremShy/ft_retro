@@ -48,6 +48,22 @@ char				GameEntity::getModel(void) const{
 	return this->_model;
 }
 
+int					GameEntity::getPositionX(void) const{
+	return this->_x;
+}
+
+int					GameEntity::getPositionY(void) const{
+	return this->_y;
+}
+
+unsigned int 		GameEntity::getHeath(void) const{
+	return this->_health;
+}
+
+unsigned int		GameEntity::getDamage(void) const{
+	return this->_damage;
+}
+
 /*-----------------------------------------------------------setter*/
 
 void				GameEntity::setModel(char model){
@@ -55,9 +71,28 @@ void				GameEntity::setModel(char model){
 	return;
 }
 
+void				GameEntity::setPositionX(int x){
+	this->_x = x;
+	return;
+}
+
+void				GameEntity::setPositionY(int y){
+	this->_y = y;
+	return;
+}
+
+void				GameEntity::setHealth(unsigned int health){
+	this->_health = health;
+	return;
+}
+
+void				GameEntity::setDamage(unsigned int damage){
+	this->_damage = damage;
+	return;
+}
+
 void				GameEntity::display(void) {
 	mvaddch(this->getPositionY(), this->getPositionX(), this->getModel());
-	// std::cout << "Displaying with values : " << this->getPositionX() << " - " << this->getPositionY() << std::endl;
 }
 
 void				GameEntity::erase(void) {
