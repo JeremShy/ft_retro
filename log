@@ -1,22 +1,95 @@
 starting program !
-Adding enemy to both machines 0x7fb4c1c031f0
+Adding enemy to both machines 0x7ff4c9c031f0
 Describing printables
-[0] : 0x7fb4c1c031c0
-Trying to add a Game Entity [0x7fb4c1c031f0] at the end of the pile
+[0] : 0x7ff4c9c031c0
+Trying to add a Game Entity [0x7ff4c9c031f0] at the end of the pile
 Describing printables
-[0] : 0x7fb4c1c031c0
-[1] : 0x7fb4c1c031f0
+[0] : 0x7ff4c9c031c0
+[1] : 0x7ff4c9c031f0
 -------------------
-Spawning enenmy at 112 - 24 with velocity : -0.16, and with address: 0x7fb4c1d00000
-Adding enemy to both machines 0x7fb4c1d00000
+Spawning enenmy at 244 - 22 with velocity : -0.16, and with address: 0x7ff4c9c06490
+Adding enemy to both machines 0x7ff4c9c06490
 Describing printables
-[0] : 0x7fb4c1c031c0
-[1] : 0x7fb4c1c031f0
-Trying to add a Game Entity [0x7fb4c1d00000] at the end of the pile
+[0] : 0x7ff4c9c031c0
+[1] : 0x7ff4c9c031f0
+Trying to add a Game Entity [0x7ff4c9c06490] at the end of the pile
 Describing printables
-[0] : 0x7fb4c1c031c0
-[1] : 0x7fb4c1c031f0
-[2] : 0x7fb4c1d00000
+[0] : 0x7ff4c9c031c0
+[1] : 0x7ff4c9c031f0
+[2] : 0x7ff4c9c06490
+-------------------
+Spawning enenmy at 268 - 9 with velocity : -0.16, and with address: 0x7ff4c9c064e0
+Adding enemy to both machines 0x7ff4c9c064e0
+Describing printables
+[0] : 0x7ff4c9c031c0
+[1] : 0x7ff4c9c031f0
+[2] : 0x7ff4c9c06490
+Trying to add a Game Entity [0x7ff4c9c064e0] at the end of the pile
+Describing printables
+[0] : 0x7ff4c9c031c0
+[1] : 0x7ff4c9c031f0
+[2] : 0x7ff4c9c06490
+[3] : 0x7ff4c9c064e0
+-------------------
+Describing printables
+[0] : 0x7ff4c9c031c0
+[1] : 0x7ff4c9c031f0
+[2] : 0x7ff4c9c06490
+[3] : 0x7ff4c9c064e0
+Trying to add a Game Entity [0x7ff4c9c06530] at the end of the pile
+Describing printables
+[0] : 0x7ff4c9c031c0
+[1] : 0x7ff4c9c031f0
+[2] : 0x7ff4c9c06490
+[3] : 0x7ff4c9c064e0
+[4] : 0x7ff4c9c06530
+-------------------
+Spawning enenmy at 241 - 42 with velocity : -0.16, and with address: 0x7ff4c9e00000
+Adding enemy to both machines 0x7ff4c9e00000
+Describing printables
+[0] : 0x7ff4c9c031c0
+[1] : 0x7ff4c9c031f0
+[2] : 0x7ff4c9c06490
+[3] : 0x7ff4c9c064e0
+[4] : 0x7ff4c9c06530
+Trying to add a Game Entity [0x7ff4c9e00000] at the end of the pile
+Describing printables
+[0] : 0x7ff4c9c031c0
+[1] : 0x7ff4c9c031f0
+[2] : 0x7ff4c9c06490
+[3] : 0x7ff4c9c064e0
+[4] : 0x7ff4c9c06530
+[5] : 0x7ff4c9e00000
 -------------------
 A collision was detected !
 A GameEntity took 20 damages.
+trying to remove item at 0x7ff4c9c06530. (first if)
+Describing printables
+[0] : 0x7ff4c9c031c0
+[1] : 0x7ff4c9c031f0
+[2] : 0x7ff4c9c06490
+[3] : 0x7ff4c9c064e0
+[4] : 0x7ff4c9c06530
+[5] : 0x7ff4c9e00000
+Trying to remove Game Entity at 4
+Describing printables
+[0] : 0x7ff4c9c031c0
+[1] : 0x7ff4c9c031f0
+[2] : 0x7ff4c9c06490
+[3] : 0x7ff4c9c064e0
+[4] : 0x7ff4c9e00000
+A bullet disappeared
+trying to remove item at 0x7ff4c9c06490. (second if)
+Describing printables
+[0] : 0x7ff4c9c031c0
+[1] : 0x7ff4c9c031f0
+[2] : 0x7ff4c9c06490
+[3] : 0x7ff4c9c064e0
+[4] : 0x7ff4c9e00000
+Trying to remove Game Entity at 2
+Describing printables
+[0] : 0x7ff4c9c031c0
+[1] : 0x7ff4c9c031f0
+[2] : 0x7ff4c9c064e0
+[3] : 0x7ff4c9e00000
+An enemy was killed
