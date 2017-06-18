@@ -1,5 +1,6 @@
 #include "RenderMachine.class.hpp"
 #include <iostream>
+#include <fstream>
 
 RenderMachine::RenderMachine(void) : _tab(NULL), _amount(0){
 }
@@ -77,10 +78,13 @@ void	RenderMachine::addPrintable(IPrintable *obj) {
 }
 
 void	RenderMachine::removePrintable(unsigned int idx) {
+	std::fstream log("log", std::fstream::out | std::fstream::app);
 	if (idx >= this->_amount) {
-		std::cout << "There was an error while trying to REMOVE a printable on the RenderMachine at position " << idx << ". There is only " << this->_amount << " printables in the table." << std::endl;
+		log << "There was an error while trying to REMOVE a printable on the RenderMachine at position " << idx << ". There is only " << this->_amount << " printables in the table." << std::endl;
+		log.close();
 		return ;
 	}
+	log << "Removing a printable !" << std::endl;
 
 	IPrintable		**new_tab = new IPrintable*[this->_amount - 1];
 	unsigned int	i;
@@ -95,9 +99,10 @@ void	RenderMachine::removePrintable(unsigned int idx) {
 	if (this->_tab)
 		delete [] this->_tab;
 	else
-		std::cout << "You aren't supposed to be here. There probably was an error.. " << std::endl;
+		log << "You aren't supposed to be here. There probably was an error.. " << std::endl;
 	this->_tab = new_tab;
 	this->_amount--;
+	log.close();
 }
 
 void	RenderMachine::removePrintable(IPrintable *obj) {
@@ -117,7 +122,7 @@ void	RenderMachine::removePrintable(AMovable *obj) {
 			return ;
 		}
 	}
-	std::cout << "There was an error while trying to REMOVE a printable." << std::endl;
+	std::cout << "There was an error while trying to REMOVE a Movable in RenderMachine." << std::endl;
 }
 
 IPrintable	*RenderMachine::getPrintable(unsigned int idx) {

@@ -1,6 +1,7 @@
 #include "MotorMachine.class.hpp"
 #include <iostream>
 #include <unistd.h>
+#include <fstream>
 
 MotorMachine::MotorMachine(void) : _tab(NULL), _amount(0){
 }
@@ -31,21 +32,37 @@ MotorMachine & MotorMachine::operator=(MotorMachine const & rhs) {
 }
 
 void	MotorMachine::moveAll(RenderMachine &render) {
+	std::fstream log("log", std::fstream::out | std::fstream::app);
 	for (unsigned int i = 0; i < this->_amount; i++) {
 		(this->_tab[i])->move();
 		for (unsigned int y = 0; y < this->_amount; y++) {
-			if (y != i){
+			if (y != i && this->_tab[i] != NULL && this->_tab[y] != NULL){
 				if ((this->_tab[i])->doesCollide(this->_tab[y])){
-					this->removeMovable(this->_tab[i]);
-					render.removePrintable(i);
-					this->_tab[i] = NULL;
+					AMovable* 	ptr = this->_tab[y];
+					this->_tab[i]->takeDamage(this->_tab[y]->getDamage());
+					this->_tab[y]->takeDamage(this->_tab[i]->getDamage());
+					if (this->_tab[i]->getHealth() == 0){
+						log << "trying to remove item at " << this->_tab[i] << ". (first if)" << std::endl;
+						AMovable*	ptr2 = this->_tab[i];
+						render.removePrintable(this->_tab[i]);
+						this->removeMovable(this->_tab[i]);
+						delete ptr2;
+					}
+					if (ptr->getHealth() == 0){
+						log << "trying to remove item at " << ptr << ". (second if)" << std::endl;
+						render.removePrintable(ptr);
+						this->removeMovable(ptr);
+						delete ptr;
+					}
 				}
 			}
 		}
 	}
+	log.close();
 }
 
 void	MotorMachine::moveAllExcept(AMovable *obj, RenderMachine &render) {
+	std::fstream log("log", std::fstream::out | std::fstream::app);
 	for (unsigned int i = 0; i < this->_amount; i++) {
 		// std::cout << "i : " << i << std::endl;
 		if (this->_tab[i] != obj && this->_tab[i] != NULL){
@@ -57,12 +74,14 @@ void	MotorMachine::moveAllExcept(AMovable *obj, RenderMachine &render) {
 						this->_tab[i]->takeDamage(this->_tab[y]->getDamage());
 						this->_tab[y]->takeDamage(this->_tab[i]->getDamage());
 						if (this->_tab[i]->getHealth() == 0){
+							log << "trying to remove item at " << this->_tab[i] << ". (first if)" << std::endl;
 							AMovable*	ptr2 = this->_tab[i];
 							render.removePrintable(this->_tab[i]);
 							this->removeMovable(this->_tab[i]);
 							delete ptr2;
 						}
 						if (ptr->getHealth() == 0){
+							log << "trying to remove item at " << ptr << ". (second if)" << std::endl;
 							render.removePrintable(ptr);
 							this->removeMovable(ptr);
 							delete ptr;
@@ -72,6 +91,7 @@ void	MotorMachine::moveAllExcept(AMovable *obj, RenderMachine &render) {
 			}
 		}
 	}
+	log.close();
 }
 
 void	MotorMachine::addMovable(unsigned int idx, AMovable *obj) { // TO DO : Tester quand les iprintable seront fonctionels.
