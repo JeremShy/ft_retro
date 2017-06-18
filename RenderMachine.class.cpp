@@ -47,7 +47,6 @@ void	RenderMachine::addPrintable(unsigned int idx, IPrintable *obj) { // TO DO :
 		std::cout << "There was an error while trying to ADD a printable on the RenderMachine at position " << idx << ". There is only " << this->_amount << " printables in the table." << std::endl;
 		return ;
 	}
-	std::cout << "id : " << idx << std::endl;
 	if (this->_amount == 0) {
 		if (this->_tab != NULL) { //_tab is supposed to be null if _amount == 0, but still..
 			delete [] this->_tab;

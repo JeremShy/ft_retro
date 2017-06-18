@@ -79,9 +79,6 @@ int main() {
 	mmachine.addMovable(enemy);
 	enemy->setDirectionX(1);
 
-	std::fstream file("a", std::fstream::out | std::fstream::trunc); //Simple fichier permettant de faire des debugs simples sans avoir à passer par la console. Faudra virer ça au rendu :).
-	file << "hei" << std::endl;
-
 	init_ncurse();
 	t1.start();
 	t2.start();

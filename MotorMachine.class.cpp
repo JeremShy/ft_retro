@@ -1,6 +1,7 @@
 #include "MotorMachine.class.hpp"
 #include <iostream>
 #include <unistd.h>
+#include <fstream>
 
 MotorMachine::MotorMachine(void) : _tab(NULL), _amount(0){
 }
@@ -135,14 +136,18 @@ void					MotorMachine::describe() {
 }
 
 void					MotorMachine::collide(RenderMachine &rmachine, GameEntity** props, int amount){
+
+	std::fstream file("a", std::fstream::out | std::fstream::trunc); //Simple fichier permettant de faire des debugs simples sans avoir à passer par la console. Faudra virer ça au rendu :).
+	file << "Calling collide." << std::endl;
+
 	for (int i = 0; i < amount; i++){
 		for (int y = i + 1; y < amount; y++){
 			if (props[i] != NULL && props[y] != NULL){
 				if (props[i]->getPositionX() == props[y]->getPositionX() && props[i]->getPositionY() == props[y]->getPositionY()){
 					props[i]->takeDamage(props[y]->getDamage());
 					props[y]->takeDamage(props[i]->getDamage());
-					std::cout << "props[i]" << props[i]->getHealth() << " | props[y] " << props[y]->getHealth();
-					sleep(1);
+					file << "props[i]" << props[i]->getHealth() << " | props[y] " << props[y]->getHealth() << std::endl;
+					// sleep(1);
 					if (props[i]->getHealth() == 0){
 						this->removeMovable(props[i]);
 						rmachine.removePrintable(props[i]);
@@ -159,4 +164,5 @@ void					MotorMachine::collide(RenderMachine &rmachine, GameEntity** props, int 
 			}
 		}
 	}
+	file << "Leaving collide." << std::endl << std::endl;
 }

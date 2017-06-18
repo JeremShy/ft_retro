@@ -28,11 +28,15 @@ Hero *			Hero::clone(void){
 	return new Hero(*this);
 }
 
-Bullet*		Hero::attack(void){
-	Bullet*		bullet = new Bullet('-', this->getRealPositionX() + 1, this->getRealPositionY(), 1, this->getDamage());
-	return bullet;
-}
+// Bullet*		Hero::attack(void){
+// 	Bullet*		bullet = new Bullet('-', this->getRealPositionX() + 1, this->getRealPositionY(), 1, this->getDamage());
+// 	return bullet;
+// }
+//
 
+void Hero::attack(void) {
+
+}
 void			Hero::takeDamage(unsigned int damage){
 	this->setHealth(this->getHealth() - damage);
 	if (this->getHealth() == 0){

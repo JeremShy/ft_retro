@@ -30,13 +30,13 @@ Enemy *			Enemy::clone(void){
 	return new Enemy(*this);
 }
 
-void			Enemy::takeDamage(unsigned int damage){
-	this->setHealth(this->getDamage() - damage);
-	if (this->getHealth() == 0){
-		delete this;
-	}
-	return;
-}
+// void			Enemy::takeDamage(unsigned int damage){
+// 	this->setHealth(this->getDamage() - damage);
+// 	if (this->getHealth() == 0){
+// 		delete this;
+// 	}
+// 	return;
+// }
 
 std::ostream& operator<< (std::ostream& stream, const Enemy & enemy) {
 	stream << enemy.getModel() << ": has " << enemy.getHealth() << "hp and deals " << enemy.getDamage() << " damage." << std::endl;

@@ -30,6 +30,11 @@ GameEntity *		GameEntity::clone(void){
 
 void					GameEntity::takeDamage(unsigned int amount) {
 	//Maybe decrement with the armor of the GE.
+	//
+	if (amount >= this->_health) {
+		this->_health = 0;
+		return ;
+	}
 	this->_health -= amount;
 }
 
