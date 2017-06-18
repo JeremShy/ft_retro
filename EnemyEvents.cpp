@@ -27,8 +27,9 @@ Enemy*			spawnRand(void){
 	int x = size.ws_col - rand() % 30;
 	ret->setPositionX(x);
 	ret->setPositionY(y);
-	double velocity = ((rand() % 3) + 20) / 100.0;
+	double velocity = ((rand() % 3) + 14) / 100.0;
 	velocity *= -1.0;
+	// double velocity = -.15;
 	log << "Spawning enenmy at "<< x << " - " << y << " with velocity : " << velocity << std::endl;
 	ret->setDirectionX(velocity);
 	return (ret);
